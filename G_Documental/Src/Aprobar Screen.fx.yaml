@@ -31,7 +31,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(204, 208, 225, 1)
         Height: =392
-        Items: =Gestor_Documental
+        Items: =If(FILTRO="",Gestor_Documental,Filter(Gestor_Documental,Estado=FILTRO))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -74,7 +74,7 @@
 
         Body3 As label:
             Align: =Align.Center
-            Color: |-
+            Color: |
                 =If(
                     DataCardKey6.Text = "Pendiente",
                     Color.BlueViolet,
@@ -180,7 +180,7 @@
         ZIndex: =5
 
     btnLimpiarFiltros As button:
-        OnSelect: =Set(_Filtro,"")
+        OnSelect: =Set (FILTRO,"")
         Text: ="Limpiar Filtros"
         X: =1114
         Y: =227
