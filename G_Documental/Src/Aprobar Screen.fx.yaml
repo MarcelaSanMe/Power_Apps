@@ -58,20 +58,22 @@
 
         Subtitle3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =35
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =20
             Text: =ThisItem.Prioridad.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
+            Width: =354
             X: =Title3.X
             Y: =Title3.Y + Title3.Height
             ZIndex: =2
 
         Body3 As label:
+            Align: =Align.Center
             Color: |-
                 =If(
                     DataCardKey6.Text = "Pendiente",
