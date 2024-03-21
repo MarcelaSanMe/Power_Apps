@@ -11,10 +11,10 @@
 
     FormViewer1 As formViewer:
         DataSource: =Gestor_Documental
-        Height: =707
+        Height: =333
         Width: =626
-        X: =21
-        Y: =26
+        X: =24
+        Y: =162
         ZIndex: =2
 
         Id_Solicitud_DataCard2 As typedDataCard.textualViewCard:
@@ -378,7 +378,7 @@
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
-        Document: =
+        Document: =Last(Gallery1.Selected.Attachments).Value
         Fill: =RGBA(0, 0, 0, 0.5)
         X: =684
         Y: =153
