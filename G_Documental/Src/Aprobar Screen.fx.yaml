@@ -31,7 +31,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(204, 208, 225, 1)
         Height: =392
-        Items: =If(FILTRO="",Gestor_Documental,Filter(Gestor_Documental,Estado=FILTRO))
+        Items: =Gestor_Documental
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -157,32 +157,4 @@
         X: =60
         Y: =20
         ZIndex: =2
-
-    btnEstadoPendiente As button:
-        OnSelect: =Set (FILTRO,"Pendiente")
-        Text: ="Pendiente"
-        X: =751
-        Y: =156
-        ZIndex: =3
-
-    btnEstadoRechazado As button:
-        OnSelect: =Set (FILTRO,"Rechazado")
-        Text: ="Rechazado"
-        X: =930
-        Y: =156
-        ZIndex: =4
-
-    btnEstadoAprobado As button:
-        OnSelect: =Set (FILTRO,"Aprobado")
-        Text: ="Aprobado"
-        X: =1114
-        Y: =156
-        ZIndex: =5
-
-    btnLimpiarFiltros As button:
-        OnSelect: =Set (FILTRO,"")
-        Text: ="Limpiar Filtros"
-        X: =1114
-        Y: =227
-        ZIndex: =6
 
