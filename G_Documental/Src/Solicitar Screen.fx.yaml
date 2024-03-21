@@ -121,14 +121,17 @@
                             Default: |
                                 =GUID()
                             DelayOutput: =true
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisplayMode: =DisplayMode.View
                             Fill: =RGBA(219, 219, 219, 1)
+                            LineHeight: =1
                             MaxLength: =Parent.MaxLength
                             PaddingLeft: =5
                             RadiusBottomLeft: =0
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
+                            Size: =9
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
