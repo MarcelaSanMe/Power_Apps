@@ -1,0 +1,39 @@
+"'Confirmacion Screen' As screen":
+
+    Image5_1 As image:
+        Height: =250
+        Image: =banner1
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle10 As rectangle:
+        BorderColor: =RGBA(0, 94, 146, 1)
+        BorderThickness: =5
+        Fill: =RGBA(153, 207, 236, 1)
+        Height: =273
+        Width: =778
+        X: =294
+        Y: =367
+        ZIndex: =2
+
+    Label1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =68
+        Size: =25
+        Text: ="GUARDADO EXITOSO"
+        Width: =392
+        X: =487
+        Y: =421
+        ZIndex: =3
+
+    Btn_Ingresar_1 As button:
+        Fill: =RGBA(9, 33, 98, 1)
+        Height: =64
+        OnSelect: =Navigate('Solicitar Screen')
+        Text: ="Radicar Nueva Solicitud"
+        Width: =223
+        X: =571
+        Y: =521
+        ZIndex: =4
+

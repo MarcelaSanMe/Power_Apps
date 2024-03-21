@@ -1,0 +1,55 @@
+"'Aprobar Screen' As screen":
+    BackgroundImage: =stefanini_bkg
+    ImagePosition: =ImagePosition.Fill
+
+    Icon2_2 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =79
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Principal Screen')
+        Width: =89
+        X: =1274
+        Y: =4
+        ZIndex: =1
+
+    Label2_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(136, 160, 209, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        Size: =25
+        Text: ="GESTIÓN DE SOLICITUDES"
+        Width: =1195
+        X: =60
+        Y: =20
+        ZIndex: =2
+
+    btnEstadoPendiente As button:
+        OnSelect: =Set(_Filtro,"Pendiente")
+        Text: ="Pendiente"
+        X: =716
+        Y: =156
+        ZIndex: =3
+
+    btnEstadoRechazado As button:
+        OnSelect: =Set(_Filtro,"Rechazado")
+        Text: ="Rechazado"
+        X: =892
+        Y: =156
+        ZIndex: =4
+
+    btnEstadoAprobado As button:
+        OnSelect: =Set(_Filtro,"Aprobado")
+        Text: ="Aprobado"
+        X: =1072
+        Y: =156
+        ZIndex: =5
+
+    btnLimpiarFiltros As button:
+        OnSelect: =Set(_Filtro,"")
+        Text: ="Limpiar Filtros"
+        X: =894
+        Y: =231
+        ZIndex: =6
+

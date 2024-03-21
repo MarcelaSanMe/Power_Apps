@@ -1,0 +1,31 @@
+{
+  "c0014c50-3ac8-400e-9d41-e3b4e2332123": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://stefaninilatam-my.sharepoint.com/personal/msmejia_latam_stefanini_com": {
+        "dataSources": {
+          "Gestor_Documental": {
+            "tableName": "680f9dfb-427b-45dc-848c-ab8a393cce93"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Gestor_Documental"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c0014c50-3ac8-400e-9d41-e3b4e2332123"
+  }
+}
