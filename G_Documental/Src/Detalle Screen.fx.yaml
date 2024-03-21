@@ -83,9 +83,12 @@
             DataCardValue10 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@Gestor_Documental].Prioridad)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Gestor_Documental.Prioridad,DataCardValue10.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
@@ -182,10 +185,14 @@
             DataCardValue12 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@Gestor_Documental].Aprobador)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(Gestor_Documental.Aprobador,DataCardValue12.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey12.Y + DataCardKey12.Height + 5
@@ -281,9 +288,12 @@
             DataCardValue14 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@Gestor_Documental].Estado)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Gestor_Documental.Estado,DataCardValue14.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
@@ -343,9 +353,12 @@
             DataCardValue15 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@Gestor_Documental].'Tipo de solicitud')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Gestor_Documental.'Tipo de solicitud',DataCardValue15.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
