@@ -159,21 +159,21 @@
         ZIndex: =2
 
     btnEstadoPendiente As button:
-        OnSelect: =Set(_Filtro,"Pendiente")
+        OnSelect: =Set (FILTRO,"Pendiente")
         Text: ="Pendiente"
         X: =751
         Y: =156
         ZIndex: =3
 
     btnEstadoRechazado As button:
-        OnSelect: =Set(_Filtro,"Rechazado")
+        OnSelect: =Set (FILTRO,"Rechazado")
         Text: ="Rechazado"
         X: =930
         Y: =156
         ZIndex: =4
 
     btnEstadoAprobado As button:
-        OnSelect: =Set(_Filtro,"Aprobado")
+        OnSelect: =Set (FILTRO,"Aprobado")
         Text: ="Aprobado"
         X: =1114
         Y: =156
