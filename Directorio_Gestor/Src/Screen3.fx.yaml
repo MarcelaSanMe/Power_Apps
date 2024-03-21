@@ -1,0 +1,43 @@
+Screen3 As screen:
+
+    PdfViewer1 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =Last(Gallery1.Selected.'Datos adjuntos').Value
+        Fill: =RGBA(0, 0, 0, 0.5)
+        X: =36
+        Y: =246
+        ZIndex: =1
+
+    Button3 As button:
+        Height: =70
+        Text: ="Aprobar"
+        Width: =252
+        X: =1056
+        Y: =464
+        ZIndex: =2
+
+    Label1_2 As label:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =100
+        Text: =
+        Width: =1366
+        ZIndex: =3
+
+    Image4_2 As image:
+        Image: =LogoStefanini
+        ZIndex: =4
+
+    Label3_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 13, 75, 1)
+        Font: =Font.'Lato Hairline'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =30
+        Text: ="Gestor de solicitudes"
+        Width: =520
+        X: =394
+        Y: =15
+        ZIndex: =5
+
