@@ -58,6 +58,7 @@
 
                 Form_Radicar As form:
                     DataSource: =Gestor_Documental
+                    DefaultMode: =FormMode.New
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     ZIndex: =1

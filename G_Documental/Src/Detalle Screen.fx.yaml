@@ -376,3 +376,11 @@
                 Y: =DataCardKey15.Y
                 ZIndex: =4
 
+    PdfViewer1 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =
+        Fill: =RGBA(0, 0, 0, 0.5)
+        X: =684
+        Y: =153
+        ZIndex: =3
+
