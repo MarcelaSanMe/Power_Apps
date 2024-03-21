@@ -31,7 +31,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(204, 208, 225, 1)
         Height: =392
-        Items: =Search(Gestor_Documental,TextInput1.Text,"Prioridad")
+        Items: =Gestor_Documental
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -157,10 +157,4 @@
         X: =60
         Y: =20
         ZIndex: =2
-
-    TextInput1 As text:
-        Default: ="Entrada de texto"
-        X: =661
-        Y: =164
-        ZIndex: =3
 
