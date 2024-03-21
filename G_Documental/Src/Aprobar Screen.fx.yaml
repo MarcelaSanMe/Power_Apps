@@ -26,7 +26,7 @@
         Y: =4
         ZIndex: =1
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderThickness: =5
         DelayItemLoading: =true
         Fill: =RGBA(204, 208, 225, 1)
