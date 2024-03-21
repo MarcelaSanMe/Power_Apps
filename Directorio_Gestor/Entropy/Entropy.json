@@ -39,6 +39,7 @@
     "Icon2": 44,
     "Icon3": 45,
     "Icon4": 46,
+    "Icon5": 76,
     "Image4": 6,
     "Image4_1": 42,
     "Image4_2": 59,
@@ -79,7 +80,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/21/2024 15:23:25",
+  "HeaderLastSavedDateTimeUTC": "03/21/2024 15:30:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7558c768-75c0-4cfa-bdc8-7ba4fcf85d49": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/79e53708133f4bdd829dfea2c7cbd55d\""
@@ -89,7 +90,7 @@
     "LogoStefanini": "b7099e99-a315-4a21-bbc6-06f3dd66e6d8.png"
   },
   "LocalResourceRootPaths": {
-    "LogoStefanini": "https://docserverpwaprodeus.blob.core.windows.net/ee9e1020-ef37-4bd1-9eeb-c2a79ef8f485-1/resource/Assets0Images0b7099e99-a315-4a21-bbc6-06f3dd66e6d8.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-21T15%3A21%3A20Z&ske=2024-03-22T15%3A36%3A20Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-22T15%3A36%3A20Z&sr=b&sp=r&sig=%2FRnHaTy7K0QkdRcyoSu9OKCCnmEk%2F4EMn2VJLJVupCM%3D"
+    "LogoStefanini": "https://docserverpwaprodeus.blob.core.windows.net/ee66add0-1135-4aff-a8e4-5de456f8a61c-1/resource/Assets0Images0b7099e99-a315-4a21-bbc6-06f3dd66e6d8.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-21T15%3A27%3A25Z&ske=2024-03-22T15%3A42%3A25Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-22T15%3A42%3A25Z&sr=b&sp=r&sig=WVIeEW9Wzsqvc4kaXbhT3R9DTNkqzP5AEsRAuUteLww%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -152,6 +153,7 @@
     "Icon2": {},
     "Icon3": {},
     "Icon4": {},
+    "Icon5": {},
     "Image4": {},
     "Image4_1": {},
     "Image4_2": {},
@@ -230,6 +232,7 @@
     "Icon2": 42,
     "Icon3": 43,
     "Icon4": 44,
+    "Icon5": 0,
     "Image4": 5,
     "Image4_1": 40,
     "Image4_2": 56,
@@ -276,7 +279,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.6488309,
+    "AnalysisLoadTime": 0.4147539,
     "ControlCount": {
       "attachments": 1,
       "button": 7,
@@ -293,7 +296,7 @@
       "text": 2,
       "typedDataCard": 6
     },
-    "DeserializationLoadTime": 1.6084874
+    "DeserializationLoadTime": 1.4645464
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
