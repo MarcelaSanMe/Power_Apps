@@ -12,6 +12,7 @@
     FormViewer1 As formViewer:
         DataSource: =Gestor_Documental
         Height: =333
+        Item: =Gallery1.Selected
         Width: =626
         X: =24
         Y: =162
