@@ -35,11 +35,3 @@ Screen4 As screen:
         Y: =15
         ZIndex: =4
 
-    Icon5 As icon.Warning:
-        Height: =117
-        Icon: =Icon.Warning
-        Width: =270
-        X: =688
-        Y: =221
-        ZIndex: =5
-

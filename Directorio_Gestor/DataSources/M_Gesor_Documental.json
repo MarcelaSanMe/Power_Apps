@@ -42,7 +42,8 @@
       "Prioridad#Id": "Prioridad Id",
       "Tipodesolicitud": "Tipo de solicitud",
       "Tipodesolicitud#Id": "Tipo de solicitud Id",
-      "Title": "Título"
+      "Title": "Título",
+      "Usuario": "Usuario"
     },
     "DatasetName": "https://stefaninilatam.sharepoint.com/sites/PowerPlatform",
     "EncodeDataset": true,
