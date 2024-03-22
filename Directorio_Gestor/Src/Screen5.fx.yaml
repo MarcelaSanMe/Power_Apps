@@ -31,7 +31,7 @@ Screen5 As screen:
     Button1_1 As button:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =76
-        OnSelect: =NewForm(Form1)
+        OnSelect: =Navigate (Screen1);NewForm(Form1)
         Text: ="Radicar Nueva Solicitud"
         Width: =196
         X: =573
