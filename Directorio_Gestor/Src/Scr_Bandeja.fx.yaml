@@ -7,7 +7,8 @@ Scr_Bandeja As screen:
         Items: =M_Gesor_Documental
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Notify("Seleccionaste el Parent", Succes, 1000)
+        OnSelect: =
+        ShowNavigation: =true
         TemplateFill: =If(ThisItem.IsSelected,Color.Aqua,Color.Beige)
         TemplatePadding: =0
         TemplateSize: =98
@@ -47,6 +48,7 @@ Scr_Bandeja As screen:
             ZIndex: =2
 
         Body1 As label:
+            Align: =Align.Justify
             Color: =
             FontWeight: =
             Height: =38
@@ -55,7 +57,7 @@ Scr_Bandeja As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =14
+            Size: =16
             Text: =ThisItem.Estado.Value
             Width: =195
             X: =812
@@ -118,8 +120,8 @@ Scr_Bandeja As screen:
         ZIndex: =4
 
     Icon5_1 As icon.Home:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        BorderThickness: =2
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =3
         Fill: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Home
@@ -127,4 +129,21 @@ Scr_Bandeja As screen:
         Width: =95
         X: =1271
         ZIndex: =10
+
+    Icon6 As icon.Sync:
+        Height: =44
+        Icon: =Icon.Sync
+        OnSelect: =Refresh(M_Gesor_Documental)
+        Width: =30
+        X: =1276
+        Y: =170
+        ZIndex: =11
+
+    Dropdown2 As dropdown:
+        Height: =56
+        Items: =Distinct(M_Gesor_Documental,Estado.Value)
+        Width: =419
+        X: =36
+        Y: =142
+        ZIndex: =12
 

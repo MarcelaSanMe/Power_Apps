@@ -8059,7 +8059,7 @@
       "StyleName": "defaultFormStyle",
       "Type": "ControlInfo"
     },
-    "Icon5": {
+    "Icon5_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -8124,7 +8124,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Icon5",
+      "Name": "Icon5_4",
       "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
