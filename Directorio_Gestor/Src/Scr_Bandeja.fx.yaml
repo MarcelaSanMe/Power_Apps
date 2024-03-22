@@ -4,7 +4,7 @@ Scr_Bandeja As screen:
         BorderThickness: =2
         DelayItemLoading: =true
         Height: =458
-        Items: =Search(M_Gesor_Documental,Txt_Nombre.Text, ob
+        Items: =Search(M_Gesor_Documental,Txt_Nombre.Text, "Observaci_x00f3_n")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -140,11 +140,11 @@ Scr_Bandeja As screen:
         ZIndex: =11
 
     Drop_Estado As dropdown:
-        Height: =56
+        Height: =49
         Items: =Distinct(M_Gesor_Documental,Estado.Value)
         Width: =419
-        X: =394
-        Y: =157
+        X: =718
+        Y: =149
         ZIndex: =12
 
     Label4 As label:
@@ -159,4 +159,22 @@ Scr_Bandeja As screen:
         X: =19
         Y: =165
         ZIndex: =14
+
+    Drop_Prioridad As dropdown:
+        Items: =Distinct(Filter(M_Gesor_Documental,Prioridad=Drop_Prioridad.Selected.Value),Estado
+        X: =361
+        Y: =158
+        ZIndex: =15
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderThickness: =3
+        Height: =73
+        Size: =20
+        Text: ="All"
+        Visible: =If(First(M_Gesor_Documental).Value="All",true,false)
+        Width: =81
+        X: =1172
+        Y: =141
+        ZIndex: =16
 
