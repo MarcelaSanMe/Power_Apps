@@ -30,8 +30,8 @@
         BorderThickness: =5
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =463
-        Items: =Gestor_Documental
+        Height: =351
+        Items: =Search(Gestor_Documental,Txt_Buscar.Text,"Observacion_Aprobador")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
@@ -40,7 +40,7 @@
         TemplateSize: =116
         Width: =1178
         X: =96
-        Y: =237
+        Y: =377
         ZIndex: =1
 
         Title3 As label:
@@ -51,7 +51,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Id_Solicitud
+            Text: =ThisItem.Observacion_Usuario
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
             X: =16
@@ -160,11 +160,18 @@
         Y: =20
         ZIndex: =2
 
-    Dropdown1 As dropdown:
-        Height: =53
-        Items: =Distinct(Gestor_Documental,Estado.Value)
-        Width: =435
-        X: =820
-        Y: =134
-        ZIndex: =3
+    Txt_Buscar As text:
+        Default: ="Entrada de texto"
+        X: =117
+        Y: =285
+        ZIndex: =5
+
+    Label4 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =51
+        Text: ="BUSCAR POR OBSERVACION"
+        Width: =320
+        X: =117
+        Y: =234
+        ZIndex: =6
 
