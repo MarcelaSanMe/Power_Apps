@@ -375,7 +375,14 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -539,7 +546,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "ItemAccessibleLabel",
-        "TemplateFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+          "InvariantPropertyName": "TemplateFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect"
       ],
       "HasDynamicProperties": false,
@@ -564,7 +578,7 @@
         {
           "Category": "Design",
           "PropertyName": "TemplateFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Behavior",

@@ -37,14 +37,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -585,16 +578,7 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "ShowNavigation",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "NavigationStep"
+        }
       ],
       "GalleryTemplateChildName": "galleryTemplate1",
       "HasDynamicProperties": false,
@@ -608,7 +592,7 @@
       "MetaDataIDKey": "",
       "Name": "Gallery1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -649,7 +633,7 @@
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -740,16 +724,6 @@
           "Category": "Design",
           "PropertyName": "BorderThickness",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ShowNavigation",
-          "RuleProviderType": "User"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "NavigationStep",
-          "RuleProviderType": "User"
         }
       ],
       "StyleName": "defaultGalleryStyle",
