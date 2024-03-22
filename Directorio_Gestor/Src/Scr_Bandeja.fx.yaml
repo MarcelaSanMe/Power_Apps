@@ -1,4 +1,4 @@
-Screen2 As screen:
+Scr_Bandeja As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderThickness: =2

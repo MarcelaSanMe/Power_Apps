@@ -1,4 +1,4 @@
-Screen1 As screen:
+Scr_Formulario As screen:
 
     Form1 As form:
         BorderColor: =RGBA(0, 13, 75, 1)
@@ -481,7 +481,7 @@ Screen1 As screen:
 
     Button2 As button:
         Fill: =RGBA(0, 13, 75, 1)
-        OnSelect: =SubmitForm(Form1);Navigate(Screen5)
+        OnSelect: =SubmitForm(Form1);Navigate(Scr_Confimacion)
         Text: ="Guardar"
         X: =536
         Y: =696

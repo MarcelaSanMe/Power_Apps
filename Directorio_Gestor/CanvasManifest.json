@@ -136,10 +136,10 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "Screen4",
-    "Screen1",
-    "Screen2",
-    "Screen3",
-    "Screen5"
+    "Scr_Home",
+    "Scr_Formulario",
+    "Scr_Bandeja",
+    "Scr_Detalle",
+    "Scr_Confimacion"
   ]
 }

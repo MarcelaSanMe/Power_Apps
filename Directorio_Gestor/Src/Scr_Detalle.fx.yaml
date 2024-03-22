@@ -1,4 +1,4 @@
-Screen3 As screen:
+Scr_Detalle As screen:
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
