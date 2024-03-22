@@ -42,8 +42,8 @@ Scr_Detalle As screen:
         ZIndex: =5
 
     Icon5_2 As icon.Home:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        BorderThickness: =2
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =3
         Fill: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Home
