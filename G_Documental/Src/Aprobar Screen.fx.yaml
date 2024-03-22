@@ -30,16 +30,17 @@
         BorderThickness: =5
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =392
+        Height: =463
         Items: =Gestor_Documental
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         TemplateFill: =If(ThisItem.IsSelected,Color.Aqua,Color.Beige)
         TemplatePadding: =0
         TemplateSize: =116
-        Width: =875
-        X: =171
-        Y: =285
+        Width: =1178
+        X: =96
+        Y: =237
         ZIndex: =1
 
         Title3 As label:
@@ -158,4 +159,12 @@
         X: =60
         Y: =20
         ZIndex: =2
+
+    Dropdown1 As dropdown:
+        Height: =53
+        Items: =Distinct(Gestor_Documental,Estado.Value)
+        Width: =435
+        X: =820
+        Y: =134
+        ZIndex: =3
 
