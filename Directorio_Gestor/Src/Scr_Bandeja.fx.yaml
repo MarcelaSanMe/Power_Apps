@@ -4,7 +4,7 @@ Scr_Bandeja As screen:
         BorderThickness: =2
         DelayItemLoading: =true
         Height: =458
-        Items: =Search(M_Gesor_Documental,Txt_Nombre.Text, "Observaci_x00f3_n")
+        Items: =Search(M_Gesor_Documental,Txt_Nombre.Text,"Observaci_x00f3_n")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -51,17 +51,25 @@ Scr_Bandeja As screen:
 
         Body1 As label:
             Align: =Align.Center
-            BorderColor: =Color.Red
-            Color: =RGBA(255, 255, 255, 1)
+            BorderColor: =Color.RoyalBlue
+            BorderThickness: =5
+            Color: =Color.White
             Fill: =Body1.BorderColor
+            FocusedBorderThickness: =10
             Font: =Font.'Lato Light'
             FontWeight: =FontWeight.Semibold
             Height: =38
-            OnSelect: =Select(Parent)
+            HoverBorderColor: =Color.Orange
+            HoverColor: =Color.Black
+            HoverFill: =Body1.HoverBorderColor
+            LineHeight: =2
+            OnSelect: =
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            PressedColor: =Color.Black
+            PressedFill: =Body1.PressedBorderColor
             Size: =16
             Text: =ThisItem.Estado.Value
             Width: =195
