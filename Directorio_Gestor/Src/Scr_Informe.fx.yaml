@@ -4,11 +4,11 @@ Scr_Informe As screen:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =494
-        Items: =Filter(M_Gesor_Documental,Estado=Pendiente)
+        Height: =440
+        Items: =Filter(M_Gesor_Documental,Estado.Value=Dro_Lista.Selected.Value)
         Width: =1291
         X: =40
-        Y: =192
+        Y: =246
         ZIndex: =1
 
         Título_Columna1 As dataTableColumn.textualColumn:
@@ -144,4 +144,10 @@ Scr_Informe As screen:
         X: =394
         Y: =15
         ZIndex: =5
+
+    Dro_Lista As dropdown:
+        Items: =Distinct(M_Gesor_Documental,Estado.Value)
+        X: =40
+        Y: =153
+        ZIndex: =6
 
