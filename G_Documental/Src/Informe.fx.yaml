@@ -1,0 +1,117 @@
+Informe As screen:
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =433
+        Items: =Filter(Gestor_Documental,Estado.Value=Dro_Estados.Selected.Value)
+        Width: =1263
+        X: =40
+        Y: =216
+        ZIndex: =1
+
+        Id_Solicitud_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Id_Solicitud"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Id_Solicitud
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Prioridad_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Prioridad"
+            FieldName: ="Prioridad"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Prioridad.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Observacion_Usuario_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Observacion_Usuario"
+            FieldName: ="Observacion_Usuario"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Observacion_Usuario
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Aprobador_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Aprobador"
+            FieldName: ="Aprobador"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Aprobador.DisplayName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        Observacion_Aprobador_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Observacion_Aprobador"
+            FieldName: ="Observacion_Aprobador"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Observacion_Aprobador
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Estado_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Estado"
+            FieldName: ="Estado"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Estado.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'Tipo de solicitud_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Tipo de solicitud"
+            FieldName: ="Tipodesolicitud"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Tipo de solicitud'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+    Dro_Estados As dropdown:
+        Items: =Distinct(Gestor_Documental,Estado.Value)
+        X: =40
+        Y: =93
+        ZIndex: =2
+
