@@ -1,19 +1,6 @@
 "'Aprobar Screen' As screen":
-    BackgroundImage: =stefanini_bkg
-    Fill: |-
-        =If(
-            DataCardKey6.Text = "Pendiente",
-            Color.BlueViolet,
-            If (
-                DataCardKey6.Text = "Aprobado",
-                Color.Green,
-                If(
-                    DataCardKey6.Text = "Rechazado",
-                    Color.Red,
-                    Color.Yellow
-                )
-            )
-        )
+    BackgroundImage: =
+    Fill: =
     ImagePosition: =ImagePosition.Fill
 
     Icon2_2 As icon.Home:
@@ -35,12 +22,12 @@
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
-        TemplateFill: =If(ThisItem.IsSelected,Color.Aqua,Color.Beige)
+        TemplateFill: =If(ThisItem.IsSelected,Color.DarkBlue,Color.LightBlue)
         TemplatePadding: =0
         TemplateSize: =116
         Width: =1178
-        X: =96
-        Y: =377
+        X: =77
+        Y: =286
         ZIndex: =1
 
         Title3 As label:
@@ -70,42 +57,21 @@
             Text: =ThisItem.Prioridad.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =354
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height
+            X: =16
+            Y: =40
             ZIndex: =2
 
         Body3 As label:
             Align: =Align.Center
+            BorderColor: =Color.RoyalBlue
             Color: |
-                =If(
-                    DataCardKey6.Text = "Pendiente",
-                    Color.BlueViolet,
-                    If (
-                        DataCardKey6.Text = "Aprobado",
-                        Color.Green,
-                        If(
-                            DataCardKey6.Text = "Rechazado",
-                            Color.Red,
-                            Color.Black
-                        )
-                    )
-                )
-            Fill: |-
-                =If(
-                    DataCardKey6.Text = "Pendiente",
-                    Color.BlueViolet,
-                    If (
-                        DataCardKey6.Text = "Aprobado",
-                        Color.Green,
-                        If(
-                            DataCardKey6.Text = "Rechazado",
-                            Color.Red,
-                            Color.Yellow
-                        )
-                    )
-                )
+                =Color.White
+            Fill: =Body3.BorderColor
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =50
+            HoverBorderColor: =Color.Orange
+            HoverColor: =Color.Black
+            HoverFill: =Body3.HoverBorderColor
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -162,8 +128,8 @@
 
     Txt_Buscar As text:
         Default: ="Entrada de texto"
-        X: =117
-        Y: =285
+        X: =72
+        Y: =159
         ZIndex: =5
 
     Label4 As label:
@@ -171,7 +137,7 @@
         Height: =51
         Text: ="BUSCAR POR OBSERVACION"
         Width: =320
-        X: =117
-        Y: =234
+        X: =72
+        Y: =108
         ZIndex: =6
 
