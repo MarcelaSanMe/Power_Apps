@@ -117,11 +117,13 @@ Scr_Bandeja As screen:
 
         Icon2 As icon.Trash:
             BorderColor: =RGBA(255, 0, 0, 1)
-            BorderThickness: =2
-            Fill: =RGBA(204, 231, 246, 1)
-            Icon: =Icon.Trash
+            Color: =RGBA(255, 0, 0, 1)
+            FocusedBorderThickness: =0
+            Height: =60
+            Icon: =Icon.Cancel
             OnSelect: =Remove(M_Gesor_Documental,Gallery1.Selected)
-            X: =1103
+            Width: =47
+            X: =1033
             Y: =14
             ZIndex: =8
 
