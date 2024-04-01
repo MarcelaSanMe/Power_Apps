@@ -309,6 +309,7 @@ Scr_Formulario As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HintText: ="Ingrese una observación de la solicitud"
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
