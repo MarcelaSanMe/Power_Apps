@@ -53,7 +53,7 @@ Scr_Bandeja As screen:
             Align: =Align.Center
             BorderColor: =Color.RoyalBlue
             BorderThickness: =5
-            Color: =If(ThisItem.Estado.Value="Pendiente",Color.Red,Color.Yellow)
+            Color: =If(ThisItem.Estado.Value="Pendiente",Color.Yellow, If(ThisItem.Estado.Value="Aprobado",Color.Green, If(ThisItem.Estado.Value="Rechazado",Color.Red,Color.Black)))
             Fill: =Body1.BorderColor
             FocusedBorderThickness: =10
             Font: =Font.'Lato Light'
