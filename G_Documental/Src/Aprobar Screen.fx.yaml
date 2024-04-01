@@ -112,6 +112,14 @@
             Width: =4
             ZIndex: =6
 
+        Icon3 As icon.Trash:
+            Color: =RGBA(255, 0, 0, 1)
+            Icon: =Icon.Trash
+            OnSelect: =Remove(Gestor_Documental,Gallery1.Selected)
+            X: =945
+            Y: =15
+            ZIndex: =7
+
     Label2_1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
