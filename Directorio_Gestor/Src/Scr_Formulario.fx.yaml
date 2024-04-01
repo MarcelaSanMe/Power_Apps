@@ -546,7 +546,7 @@ Scr_Formulario As screen:
 
     Button2 As button:
         Fill: =RGBA(0, 13, 75, 1)
-        OnSelect: =SubmitForm(Form1);Navigate(Scr_Confimacion)
+        OnSelect: =SubmitForm(Form1);Notify("Se Registró correctamente",NotificationType.Success); Navigate(Scr_Confimacion)
         Text: ="Guardar"
         X: =536
         Y: =696
