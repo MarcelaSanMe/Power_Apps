@@ -68,7 +68,7 @@ Scr_Home As screen:
                 Height: =37
                 HoverColor: =RGBA(237, 237, 237, 1)
                 HoverFill: =Self.Color
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =20
                 Text: =ThisItem.label
                 Width: =296
