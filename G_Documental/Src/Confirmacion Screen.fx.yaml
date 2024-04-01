@@ -1,4 +1,5 @@
 "'Confirmacion Screen' As screen":
+    Fill: =RGBA(Slider1.Value,Slider2.Value,Slider3.Value,1)
 
     Image5_1 As image:
         Height: =250
@@ -13,7 +14,7 @@
         Height: =273
         Width: =778
         X: =294
-        Y: =367
+        Y: =267
         ZIndex: =2
 
     Label1 As label:
@@ -24,7 +25,7 @@
         Text: ="GUARDADO EXITOSO"
         Width: =392
         X: =487
-        Y: =421
+        Y: =321
         ZIndex: =3
 
     Btn_Ingresar_1 As button:
@@ -34,6 +35,27 @@
         Text: ="Radicar Nueva Solicitud"
         Width: =223
         X: =571
-        Y: =521
+        Y: =421
         ZIndex: =4
+
+    Slider1 As slider:
+        Max: =255
+        ValueFill: =RGBA(255, 0, 0, 1)
+        X: =15
+        Y: =579
+        ZIndex: =5
+
+    Slider2 As slider:
+        Max: =255
+        ValueFill: =RGBA(152, 208, 70, 1)
+        X: =15
+        Y: =632
+        ZIndex: =6
+
+    Slider3 As slider:
+        Max: =255
+        ValueFill: =RGBA(39, 113, 194, 1)
+        X: =15
+        Y: =689
+        ZIndex: =7
 
