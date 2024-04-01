@@ -53,7 +53,7 @@ Scr_Bandeja As screen:
             Align: =Align.Center
             BorderColor: =Color.RoyalBlue
             BorderThickness: =5
-            Color: =Color.White
+            Color: =If(ThisItem.Estado.Value="Pendiente",Color.Red,Color.Yellow)
             Fill: =Body1.BorderColor
             FocusedBorderThickness: =10
             Font: =Font.'Lato Light'
@@ -192,8 +192,15 @@ Scr_Bandeja As screen:
         Height: =77
         Size: =20
         Text: =CountRows (M_Gesor_Documental)
-        Width: =73
-        X: =1281
+        Width: =65
+        X: =1288
         Y: =168
         ZIndex: =16
+
+    Label13 As label:
+        Text: ="Cantidad de registros"
+        Width: =187
+        X: =1164
+        Y: =128
+        ZIndex: =17
 
