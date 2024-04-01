@@ -11,11 +11,12 @@
 
     FormViewer1 As formViewer:
         DataSource: =Gestor_Documental
-        Height: =333
+        Height: =541
         Item: =Gallery1.Selected
+        NumberOfColumns: =2
         Width: =626
         X: =24
-        Y: =162
+        Y: =150
         ZIndex: =2
 
         Id_Solicitud_DataCard2 As typedDataCard.textualViewCard:
@@ -27,7 +28,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =59
             Required: =false
-            Width: =416
+            Width: =313
             X: =0
             Y: =0
             ZIndex: =3
@@ -65,8 +66,8 @@
             Height: =50
             Required: =true
             Update: =DataCardValue10.Selected
-            Width: =208
-            X: =2
+            Width: =313
+            X: =1
             Y: =0
             ZIndex: =3
 
@@ -129,7 +130,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =12
             Required: =false
-            Width: =208
+            Width: =313
             X: =0
             Y: =1
             ZIndex: =3
@@ -167,7 +168,7 @@
             Height: =89
             Required: =true
             Update: =DataCardValue12.Selected
-            Width: =208
+            Width: =313
             X: =1
             Y: =1
             ZIndex: =3
@@ -232,9 +233,9 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =208
-            X: =2
-            Y: =1
+            Width: =313
+            X: =0
+            Y: =2
             ZIndex: =3
 
             DataCardKey13 As label:
@@ -270,8 +271,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue14.Selected
-            Width: =208
-            X: =0
+            Width: =313
+            X: =1
             Y: =2
             ZIndex: =3
 
@@ -335,9 +336,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue15.Selected
-            Width: =208
-            X: =1
-            Y: =2
+            Width: =313
+            X: =0
+            Y: =3
             ZIndex: =3
 
             DataCardKey15 As label:
