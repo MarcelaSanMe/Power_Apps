@@ -12,7 +12,7 @@ Scr_Bandeja As screen:
         TemplateFill: =If(ThisItem.IsSelected,Color.DarkBlue,Color.LightBlue)
         TemplatePadding: =0
         TemplateSize: =98
-        Width: =1270
+        Width: =1318
         X: =36
         Y: =257
         ZIndex: =1
@@ -73,7 +73,7 @@ Scr_Bandeja As screen:
             Size: =16
             Text: =ThisItem.Estado.Value
             Width: =195
-            X: =812
+            X: =720
             Y: =26
             ZIndex: =3
 
@@ -123,7 +123,7 @@ Scr_Bandeja As screen:
             Icon: =Icon.Cancel
             OnSelect: =Remove(M_Gesor_Documental,Gallery1.Selected)
             Width: =47
-            X: =1033
+            X: =970
             Y: =14
             ZIndex: =8
 
@@ -163,15 +163,6 @@ Scr_Bandeja As screen:
         X: =1271
         ZIndex: =10
 
-    Icon6 As icon.Sync:
-        Height: =44
-        Icon: =Icon.Sync
-        OnSelect: =Refresh(M_Gesor_Documental)
-        Width: =30
-        X: =1288
-        Y: =182
-        ZIndex: =11
-
     Label4 As label:
         Text: ="Buscar observación"
         Width: =286
@@ -184,4 +175,25 @@ Scr_Bandeja As screen:
         X: =19
         Y: =165
         ZIndex: =14
+
+    Checkbox2 As checkbox:
+        Height: =63
+        Text: ="Pendiente de aprobación"
+        Width: =184
+        X: =1104
+        Y: =267
+        ZIndex: =15
+
+    Label12 As label:
+        Align: =Align.Center
+        BorderThickness: =1
+        Fill: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =77
+        Size: =20
+        Text: =CountRows (M_Gesor_Documental)
+        Width: =73
+        X: =1281
+        Y: =168
+        ZIndex: =16
 
