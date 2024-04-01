@@ -3,7 +3,7 @@ Scr_Bandeja As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderThickness: =2
         DelayItemLoading: =true
-        Height: =458
+        Height: =406
         Items: =Search(M_Gesor_Documental,Txt_Nombre.Text,"Observaci_x00f3_n")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -12,13 +12,15 @@ Scr_Bandeja As screen:
         TemplateFill: =If(ThisItem.IsSelected,Color.DarkBlue,Color.LightBlue)
         TemplatePadding: =0
         TemplateSize: =98
-        Width: =1318
+        Width: =1296
         X: =36
-        Y: =257
+        Y: =309
         ZIndex: =1
 
         Title2 As label:
             Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(9, 33, 98, 1)
+            DisabledFill: =RGBA(255, 255, 255, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =57
             OnSelect: =Select(Parent)
@@ -29,9 +31,9 @@ Scr_Bandeja As screen:
             Size: =20
             Text: =ThisItem.Observacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =629
-            X: =151
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle2.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+            Width: =712
+            X: =4
+            Y: =1
             ZIndex: =1
 
         Subtitle2 As label:
@@ -51,14 +53,14 @@ Scr_Bandeja As screen:
 
         Body1 As label:
             Align: =Align.Center
-            BorderColor: =Color.RoyalBlue
+            BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =5
             Color: =If(ThisItem.Estado.Value="Pendiente",Color.Yellow, If(ThisItem.Estado.Value="Aprobado",Color.Green, If(ThisItem.Estado.Value="Rechazado",Color.Red,Color.Black)))
             Fill: =Body1.BorderColor
             FocusedBorderThickness: =10
             Font: =Font.'Lato Light'
-            FontWeight: =FontWeight.Semibold
-            Height: =38
+            FontWeight: =FontWeight.Bold
+            Height: =50
             HoverBorderColor: =Color.Orange
             HoverColor: =Color.Black
             HoverFill: =Body1.HoverBorderColor
@@ -70,11 +72,11 @@ Scr_Bandeja As screen:
             PaddingTop: =0
             PressedColor: =Color.Black
             PressedFill: =Body1.PressedBorderColor
-            Size: =16
+            Size: =20
             Text: =ThisItem.Estado.Value
             Width: =195
-            X: =720
-            Y: =26
+            X: =872
+            Y: =24
             ZIndex: =3
 
         NextArrow2 As icon.ChevronRight:
@@ -107,14 +109,6 @@ Scr_Bandeja As screen:
             Width: =4
             ZIndex: =6
 
-        Circle1 As circle:
-            Height: =60
-            OnSelect: =Switch(ThisItem.Estado.Value,"Pendiente",Color.Yellow,"Rechazado",Color.Red,"Aprobado",Color.Green,Color.Blue)
-            Width: =65
-            X: =45
-            Y: =14
-            ZIndex: =7
-
         Icon2 As icon.Trash:
             BorderColor: =RGBA(255, 0, 0, 1)
             Color: =RGBA(255, 0, 0, 1)
@@ -123,7 +117,7 @@ Scr_Bandeja As screen:
             Icon: =Icon.Cancel
             OnSelect: =Remove(M_Gesor_Documental,Gallery1.Selected)
             Width: =47
-            X: =970
+            X: =1129
             Y: =14
             ZIndex: =8
 
@@ -166,23 +160,15 @@ Scr_Bandeja As screen:
     Label4 As label:
         Text: ="Buscar observación"
         Width: =286
-        X: =19
-        Y: =117
+        X: =36
+        Y: =128
         ZIndex: =13
 
     Txt_Nombre As text:
         Default: =""
-        X: =19
-        Y: =165
+        X: =36
+        Y: =176
         ZIndex: =14
-
-    Checkbox2 As checkbox:
-        Height: =63
-        Text: ="Pendiente de aprobación"
-        Width: =184
-        X: =1104
-        Y: =267
-        ZIndex: =15
 
     Label12 As label:
         Align: =Align.Center
@@ -193,14 +179,14 @@ Scr_Bandeja As screen:
         Size: =20
         Text: =CountRows (M_Gesor_Documental)
         Width: =65
-        X: =1288
+        X: =1267
         Y: =168
         ZIndex: =16
 
     Label13 As label:
         Text: ="Cantidad de registros"
         Width: =187
-        X: =1164
+        X: =1143
         Y: =128
         ZIndex: =17
 

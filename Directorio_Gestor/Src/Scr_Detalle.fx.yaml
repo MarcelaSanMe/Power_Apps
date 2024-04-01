@@ -4,16 +4,18 @@ Scr_Detalle As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: =Last(Gallery1.Selected.'Datos adjuntos').Value
         Fill: =RGBA(0, 0, 0, 0.5)
-        X: =36
-        Y: =246
+        Height: =483
+        Width: =466
+        X: =780
+        Y: =172
         ZIndex: =1
 
     Button3 As button:
         Height: =70
         Text: ="Aprobar"
         Width: =252
-        X: =1056
-        Y: =464
+        X: =84
+        Y: =552
         ZIndex: =2
 
     Label1_2 As label:
@@ -51,4 +53,149 @@ Scr_Detalle As screen:
         Width: =95
         X: =1271
         ZIndex: =6
+
+    Form2 As form:
+        DataSource: =M_Gesor_Documental
+        DefaultMode: =FormMode.New
+        Height: =368
+        NumberOfColumns: =1
+        Width: =700
+        X: =34
+        Y: =167
+        ZIndex: =8
+
+        Estado_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Estado"
+            Default: =ThisItem.Estado
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Estado")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue13.Selected
+            Width: =700
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@M_Gesor_Documental].Estado)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(M_Gesor_Documental.Estado,DataCardValue13.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+            ErrorMessage13 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible13 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+        Observacion_Aprobador_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Observacion_Aprobador"
+            Default: =ThisItem.Observacion_Aprobador
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Observacion_Aprobador")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =219
+            MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, "Observacion_Aprobador")
+            Required: =false
+            Update: =DataCardValue17.Text
+            Width: =700
+            X: =0
+            Y: =1
+            ZIndex: =9
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue17 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =130
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                ZIndex: =2
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue17.Y + DataCardValue17.Height
+                ZIndex: =3
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Height: =DataCardKey17.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey17.Y
+                ZIndex: =4
 

@@ -184,6 +184,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Scr_Detalle.Form2.Observacion_Aprobador_DataCard1.DataCardValue17.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr_Detalle.Form2.Observacion_Aprobador_DataCard1.DataCardValue17.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr_Detalle",
+                "type": "Scr_Detalle.Form2.Observacion_Aprobador_DataCard1.DataCardValue17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Scr_Bandeja.Gallery1.AccessibleLabel"
                 }
               ],
@@ -244,19 +274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Bandeja.Gallery1.Circle1.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Detalle.Form2.Estado_DataCard1.DataCardValue13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Bandeja.Gallery1.Circle1.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Detalle.Form2.Estado_DataCard1.DataCardValue13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Scr_Bandeja",
-                "type": "Scr_Bandeja.Gallery1.Circle1"
+                "module": "Scr_Detalle",
+                "type": "Scr_Detalle.Form2.Estado_DataCard1.DataCardValue13"
               }
             }
           ],
@@ -268,36 +298,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Scr_Bandeja.Gallery1.Circle1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Scr_Bandeja.Gallery1.Circle1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Scr_Bandeja",
-                "type": "Scr_Bandeja.Gallery1.Circle1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
         },
         {
           "locations": [
