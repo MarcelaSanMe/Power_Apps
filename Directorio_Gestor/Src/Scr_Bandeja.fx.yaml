@@ -168,7 +168,7 @@ Scr_Bandeja As screen:
         ZIndex: =13
 
     Txt_Nombre As text:
-        Default: ="Entrada de texto"
+        Default: =""
         X: =19
         Y: =165
         ZIndex: =14
