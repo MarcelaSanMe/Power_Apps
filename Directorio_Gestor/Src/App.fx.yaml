@@ -1,5 +1,31 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            Menu_Gestor,
+            {
+                id: 1,
+                label: "Radicar Solicitud",
+                icon: Icon.Bookmark,
+                iconColor: RGBA(
+                    141,
+                    198,
+                    63,
+                    1
+                )
+            },
+            {
+                id: 2,
+                label: "Ver Informe",
+                icon: Icon.DockCheckProperties,
+                iconColor: RGBA(
+                    141,
+                    198,
+                    63,
+                    1
+                )
+            }
+        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

@@ -6,8 +6,8 @@ Scr_Home As screen:
         OnSelect: =Navigate(Scr_Formulario)
         Text: ="Radicar Solicitud"
         Width: =196
-        X: =556
-        Y: =422
+        X: =1005
+        Y: =252
         ZIndex: =1
 
     Label1_3 As label:
@@ -34,4 +34,51 @@ Scr_Home As screen:
         X: =394
         Y: =15
         ZIndex: =4
+
+    Button1_3 As button:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =76
+        OnSelect: =Navigate (Scr_Informe)
+        Text: ="Ver Informe"
+        Width: =196
+        X: =1005
+        Y: =347
+        ZIndex: =5
+
+    Container2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =668
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Y: =100
+        ZIndex: =6
+
+        Gallery7 As gallery.galleryVertical:
+            DelayItemLoading: =true
+            Items: =Menu_Gestor
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =100
+            ZIndex: =1
+
+            Label10 As label:
+                Color: =RGBA(19, 113, 155, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =41
+                HoverColor: =RGBA(237, 237, 237, 1)
+                HoverFill: =Self.Color
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.label
+                Width: =225
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            Rectangle6 As rectangle:
+                Fill: =RGBA(9, 33, 98, 1)
+                OnSelect: =Select(Parent)
+                Visible: =If (ThisItem.id=Gallery7.Selected.id,true,false)
+                Width: =15
+                ZIndex: =2
 
