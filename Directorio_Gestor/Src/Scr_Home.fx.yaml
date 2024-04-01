@@ -65,12 +65,13 @@ Scr_Home As screen:
             Label10 As label:
                 Color: =RGBA(19, 113, 155, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =37
                 HoverColor: =RGBA(237, 237, 237, 1)
                 HoverFill: =Self.Color
                 OnSelect: =Select(Parent)
+                Size: =20
                 Text: =ThisItem.label
-                Width: =225
+                Width: =296
                 X: =40
                 Y: =40
                 ZIndex: =1
