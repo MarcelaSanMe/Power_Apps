@@ -103,7 +103,7 @@ Scr_Informe As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =8
-            Text: =ThisItem.Fecha_Solicitud
+            Text: =ThisItem.'Fecha Solicitud'
             Width: =100
             X: =0
             Y: =0

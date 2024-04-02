@@ -16,7 +16,7 @@ Scr_Formulario As screen:
         Fecha_Solicitud_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Fecha_Solicitud"
-            Default: =ThisItem.Fecha_Solicitud
+            Default: =ThisItem.'Fecha Solicitud'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Fecha_Solicitud")
             Fill: =RGBA(0, 0, 0, 0)
@@ -354,7 +354,7 @@ Scr_Formulario As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Tipodesolicitud")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             Required: =false
             Update: =DataCardValue6.Selected
             Width: =621
@@ -528,7 +528,7 @@ Scr_Formulario As screen:
             AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(0, 13, 75, 1)
             Height: =46
-            OnSelect: =SubmitForm(Form1);Notify("Se Registró correctamente",NotificationType.Success); Navigate(Scr_Confimacion)
+            OnSelect: =SubmitForm(Form1);Notify("Se Registró correctamente la solicitud",NotificationType.Success); Navigate(Scr_Confimacion)
             Text: ="Guardar"
             Width: =185
             X: =1181

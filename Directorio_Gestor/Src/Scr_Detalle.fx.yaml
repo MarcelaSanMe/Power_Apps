@@ -417,7 +417,7 @@ Scr_Detalle As screen:
         Fecha_Solicitud_DataCard4 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Fecha_Solicitud"
-            Default: =ThisItem.Fecha_Solicitud
+            Default: =ThisItem.'Fecha Solicitud'
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Fecha_Solicitud")
             Fill: =RGBA(0, 0, 0, 0)
