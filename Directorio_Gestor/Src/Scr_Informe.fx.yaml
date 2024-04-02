@@ -19,7 +19,7 @@ Scr_Informe As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.Title
+            Text: =ThisItem.'ID Solicitud'
             Width: =100
             X: =0
             Y: =0

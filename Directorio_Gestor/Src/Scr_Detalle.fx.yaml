@@ -47,7 +47,7 @@ Scr_Detalle As screen:
         Título_DataCard4 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
-            Default: =ThisItem.Title
+            Default: =ThisItem.'ID Solicitud'
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
