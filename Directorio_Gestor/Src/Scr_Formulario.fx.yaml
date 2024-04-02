@@ -5,11 +5,11 @@ Scr_Formulario As screen:
         DataSource: =M_Gesor_Documental
         DefaultMode: =FormMode.New
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =485
+        Height: =519
         NumberOfColumns: =2
         Width: =1242
         X: =66
-        Y: =169
+        Y: =142
         ZIndex: =1
 
         Usuario_DataCard1 As typedDataCard.textualEditCard:
@@ -507,6 +507,7 @@ Scr_Formulario As screen:
             DataCardValue7 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 IsInDataCard: =true
                 Items: =Parent.Default
                 PaddingBottom: =5
@@ -617,4 +618,11 @@ Scr_Formulario As screen:
         X: =1160
         Y: =61
         ZIndex: =11
+
+    Icon6 As icon.Print:
+        Icon: =Icon.Print
+        OnSelect: =Print()
+        X: =813
+        Y: =681
+        ZIndex: =12
 
