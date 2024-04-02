@@ -157,6 +157,43 @@ Scr_Detalle As screen:
                 Y: =DataCardKey29.Y
                 ZIndex: =4
 
+        Observacion_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Observaci_x00f3_n"
+            Default: =ThisItem.Observacion
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Observaci_x00f3_n")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =346
+            X: =0
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey30 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue30 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                ZIndex: =2
+
         Aprobador_DataCard4 As typedDataCard.comboBoxMultiSelectViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Aprobador"
@@ -220,43 +257,6 @@ Scr_Detalle As screen:
                 Wrap: =false
                 Y: =DataCardKey31.Y
                 ZIndex: =4
-
-        Observacion_DataCard3 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Observaci_x00f3_n"
-            Default: =ThisItem.Observacion
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Observaci_x00f3_n")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =346
-            X: =0
-            Y: =1
-            ZIndex: =8
-
-            DataCardKey30 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue30 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
-                ZIndex: =2
 
         Estado_DataCard3 As typedDataCard.comboBoxViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -498,4 +498,13 @@ Scr_Detalle As screen:
                 X: =30
                 Y: =DataCardKey36.Y + DataCardKey36.Height + 5
                 ZIndex: =2
+
+    Icon4_2 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =48
+        X: =18
+        Y: =700
+        ZIndex: =8
 

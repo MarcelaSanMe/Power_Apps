@@ -3,7 +3,7 @@ Scr_Bandeja As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderThickness: =2
         DelayItemLoading: =true
-        Height: =406
+        Height: =391
         Items: =Search(M_Gesor_Documental,Txt_Nombre.Text,"Observaci_x00f3_n")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -14,7 +14,7 @@ Scr_Bandeja As screen:
         TemplateSize: =98
         Width: =1296
         X: =36
-        Y: =309
+        Y: =282
         ZIndex: =1
 
         Title2 As label:
@@ -190,4 +190,13 @@ Scr_Bandeja As screen:
         X: =1143
         Y: =128
         ZIndex: =17
+
+    Icon4_1 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =48
+        X: =18
+        Y: =700
+        ZIndex: =18
 

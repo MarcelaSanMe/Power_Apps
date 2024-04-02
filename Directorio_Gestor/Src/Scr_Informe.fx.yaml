@@ -151,3 +151,12 @@ Scr_Informe As screen:
         Y: =153
         ZIndex: =6
 
+    Icon4_4 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =48
+        X: =18
+        Y: =700
+        ZIndex: =7
+

@@ -95,3 +95,12 @@ Scr_Confimacion As screen:
         Y: =582
         ZIndex: =11
 
+    Icon4_3 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =48
+        X: =18
+        Y: =700
+        ZIndex: =12
+

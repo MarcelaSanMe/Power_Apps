@@ -600,3 +600,12 @@ Scr_Formulario As screen:
             Y: =147
             ZIndex: =1
 
+    Icon4 As icon.BackArrow:
+        Height: =48
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =48
+        X: =18
+        Y: =700
+        ZIndex: =10
+
