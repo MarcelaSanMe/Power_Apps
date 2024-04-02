@@ -6,8 +6,8 @@ Scr_Home As screen:
         OnSelect: =Navigate (Scr_Formulario);NewForm(Form1)
         Text: ="Radicar Solicitud"
         Width: =196
-        X: =1005
-        Y: =252
+        X: =980
+        Y: =184
         ZIndex: =1
 
     Label1_3 As label:
@@ -41,8 +41,8 @@ Scr_Home As screen:
         OnSelect: =Navigate (Scr_Informe)
         Text: ="Ver Informe"
         Width: =196
-        X: =1005
-        Y: =347
+        X: =980
+        Y: =289
         ZIndex: =5
 
     Container2 As groupContainer.verticalAutoLayoutContainer:

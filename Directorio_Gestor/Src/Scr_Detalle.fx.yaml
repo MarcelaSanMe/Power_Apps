@@ -35,17 +35,6 @@ Scr_Detalle As screen:
         Y: =15
         ZIndex: =5
 
-    Icon5_2 As icon.Home:
-        BorderColor: =RGBA(9, 33, 98, 1)
-        BorderThickness: =3
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =100
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Scr_Home)
-        Width: =95
-        X: =1271
-        ZIndex: =6
-
     FormViewer2 As formViewer:
         DataSource: =M_Gesor_Documental
         Height: =498
@@ -507,4 +496,25 @@ Scr_Detalle As screen:
         X: =18
         Y: =700
         ZIndex: =8
+
+    Icon5_7 As icon.Home:
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =3
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =45
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Scr_Home)
+        Width: =71
+        X: =1278
+        Y: =15
+        ZIndex: =9
+
+    Label5_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1160
+        Y: =61
+        ZIndex: =10
 

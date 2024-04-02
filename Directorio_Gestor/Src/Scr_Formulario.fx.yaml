@@ -573,12 +573,12 @@ Scr_Formulario As screen:
         BorderColor: =RGBA(9, 33, 98, 1)
         BorderThickness: =3
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =63
+        Height: =45
         Icon: =Icon.Home
         OnSelect: =Navigate(Scr_Home)
-        Width: =81
-        X: =1272
-        Y: =18
+        Width: =71
+        X: =1278
+        Y: =15
         ZIndex: =7
 
     Container3 As groupContainer.verticalAutoLayoutContainer:
@@ -608,4 +608,13 @@ Scr_Formulario As screen:
         X: =18
         Y: =700
         ZIndex: =10
+
+    Label5_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1160
+        Y: =61
+        ZIndex: =11
 
