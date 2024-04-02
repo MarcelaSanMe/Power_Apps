@@ -24,6 +24,7 @@ Scr_Formulario As screen:
             MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, "Usuario")
             Required: =false
             Update: =DataCardValue5.Text
+            Visible: =false
             Width: =621
             X: =1
             Y: =3
