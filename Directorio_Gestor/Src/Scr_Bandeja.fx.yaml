@@ -29,7 +29,7 @@ Scr_Bandeja As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.Observación
+            Text: =ThisItem.Observacion
             VerticalAlign: =VerticalAlign.Top
             Width: =712
             X: =4

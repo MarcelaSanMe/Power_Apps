@@ -2,7 +2,7 @@ Scr_Detalle As screen:
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
-        Document: =Last(Gallery1.Selected.Attachments).Value
+        Document: =Last(Gallery1.Selected.'Datos adjuntos').Value
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =483
         Width: =466
@@ -149,7 +149,7 @@ Scr_Detalle As screen:
         Observacion_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Observaci_x00f3_n"
-            Default: =ThisItem.Observación
+            Default: =ThisItem.Observacion
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Observaci_x00f3_n")
             Fill: =RGBA(0, 0, 0, 0)
