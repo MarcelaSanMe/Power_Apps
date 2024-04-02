@@ -84,14 +84,24 @@ Scr_Home As screen:
                 ZIndex: =2
 
     Icon5 As icon.Globe:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =56
+        Color: =RGBA(9, 33, 98, 1)
+        Height: =93
+        HoverColor: =ColorFade(Self.Color, 50%)
         Icon: =Icon.Globe
         OnSelect: |-
             =Launch("https://stefanini.com/es")
         Tooltip: ="Ir a la página de Stefanini"
-        Width: =49
-        X: =1269
-        Y: =29
+        Width: =84
+        X: =1160
+        Y: =619
         ZIndex: =7
+
+    Label5 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1160
+        Y: =61
+        ZIndex: =8
 

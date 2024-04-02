@@ -110,6 +110,7 @@
     "Label3_4": 8,
     "Label3_5": 139,
     "Label4": 111,
+    "Label5": 156,
     "NextArrow2": 121,
     "Observacion_Aprobador_DataCard3": 54,
     "Observacion_Columna1": 144,
@@ -158,7 +159,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/02/2024 14:43:15",
+  "HeaderLastSavedDateTimeUTC": "04/02/2024 14:54:10",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7558c768-75c0-4cfa-bdc8-7ba4fcf85d49": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/79e53708133f4bdd829dfea2c7cbd55d\""
@@ -309,6 +310,7 @@
     "Label3_4": {},
     "Label3_5": {},
     "Label4": {},
+    "Label5": {},
     "NextArrow2": {},
     "Observacion_Aprobador_DataCard3": {},
     "Observacion_Columna1": {},
@@ -466,6 +468,7 @@
     "Label3_4": 120,
     "Label3_5": 131,
     "Label4": 62,
+    "Label5": 0,
     "NextArrow2": 72,
     "Observacion_Aprobador_DataCard3": 113,
     "Observacion_Columna1": 136,
