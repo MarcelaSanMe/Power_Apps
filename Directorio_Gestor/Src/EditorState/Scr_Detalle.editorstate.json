@@ -8644,7 +8644,7 @@
         {
           "Category": "Data",
           "PropertyName": "Document",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

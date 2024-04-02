@@ -19,7 +19,7 @@ Scr_Informe As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.Título
+            Text: =ThisItem.Title
             Width: =100
             X: =0
             Y: =0
@@ -47,7 +47,7 @@ Scr_Informe As screen:
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =3
-            Text: =ThisItem.Observacion
+            Text: =ThisItem.Observación
             Width: =100
             X: =0
             Y: =0

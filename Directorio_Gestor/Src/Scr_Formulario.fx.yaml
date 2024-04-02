@@ -42,7 +42,7 @@ Scr_Formulario As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =User().Email
                 DelayOutput: =true
-                DisplayMode: =DisplayMode.Disabled
+                DisplayMode: =DisplayMode.View
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -107,7 +107,7 @@ Scr_Formulario As screen:
 
             DataCardValue8 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =DisplayMode.Disabled
+                DisplayMode: =DisplayMode.View
                 EndYear: =Year(Today())+100
                 IsEditable: =true
                 PaddingBottom: =0
@@ -147,7 +147,7 @@ Scr_Formulario As screen:
         Título_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
-            Default: =ThisItem.Título
+            Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
@@ -172,9 +172,9 @@ Scr_Formulario As screen:
 
             DataCardValue1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =GUID()
+                Default: =First(Split(GUID(),"-")).Value
                 DelayOutput: =true
-                DisplayMode: =DisplayMode.Disabled
+                DisplayMode: =DisplayMode.View
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -281,7 +281,7 @@ Scr_Formulario As screen:
         Observación_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Observaci_x00f3_n"
-            Default: =ThisItem.Observacion
+            Default: =ThisItem.Observación
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Observaci_x00f3_n")
             Fill: =RGBA(0, 0, 0, 0)
@@ -482,7 +482,7 @@ Scr_Formulario As screen:
         "'Datos adjuntos_DataCard1' As typedDataCard.attachmentsEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.'Datos adjuntos'
+            Default: =ThisItem.Attachments
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
