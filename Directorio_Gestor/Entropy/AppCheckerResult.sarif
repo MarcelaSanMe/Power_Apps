@@ -304,19 +304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon5_4.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Home.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon5_4.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon5_4"
+                "type": "Scr_Formulario.Ico_Home"
               }
             }
           ],
@@ -334,19 +334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon5_4.TabIndex"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon5_4.TabIndex",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Home.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon5_4"
+                "type": "Scr_Formulario.Ico_Home"
               }
             }
           ],
@@ -364,19 +364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Usuario_DataCard1.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Usuario_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Usuario_DataCard1.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Usuario_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Usuario_DataCard1.DataCardValue5"
+                "type": "Scr_Formulario.Frm_Radicar.Usuario_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -394,19 +394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Título_DataCard1.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Título_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Título_DataCard1.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Título_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Título_DataCard1.DataCardValue1"
+                "type": "Scr_Formulario.Frm_Radicar.Título_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -424,19 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Prioridad_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Prioridad_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Prioridad_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Prioridad_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Prioridad_DataCard1.DataCardValue2"
+                "type": "Scr_Formulario.Frm_Radicar.Prioridad_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -454,19 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Observación_DataCard1.DataCardValue3.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Observación_DataCard1.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Observación_DataCard1.DataCardValue3.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Observación_DataCard1.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Observación_DataCard1.DataCardValue3"
+                "type": "Scr_Formulario.Frm_Radicar.Observación_DataCard1.DataCardValue3"
               }
             }
           ],
@@ -484,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Aprobador_DataCard1.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Aprobador_DataCard1.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Aprobador_DataCard1.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Aprobador_DataCard1.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Aprobador_DataCard1.DataCardValue4"
+                "type": "Scr_Formulario.Frm_Radicar.Aprobador_DataCard1.DataCardValue4"
               }
             }
           ],
@@ -514,19 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.'Tipo de solicitud_DataCard1'.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.'Tipo de solicitud_DataCard1'.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.'Tipo de solicitud_DataCard1'.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.'Tipo de solicitud_DataCard1'.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.'Tipo de solicitud_DataCard1'.DataCardValue6"
+                "type": "Scr_Formulario.Frm_Radicar.'Tipo de solicitud_DataCard1'.DataCardValue6"
               }
             }
           ],
@@ -544,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.'Datos adjuntos_DataCard1'.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.'Datos adjuntos_DataCard1'.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.'Datos adjuntos_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.'Datos adjuntos_DataCard1'.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.'Datos adjuntos_DataCard1'.DataCardValue7"
+                "type": "Scr_Formulario.Frm_Radicar.'Datos adjuntos_DataCard1'.DataCardValue7"
               }
             }
           ],
@@ -574,19 +574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Fecha_Solicitud_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Fecha_Solicitud_DataCard1.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Form1.Fecha_Solicitud_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Frm_Radicar.Fecha_Solicitud_DataCard1.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Form1.Fecha_Solicitud_DataCard1.DataCardValue8"
+                "type": "Scr_Formulario.Frm_Radicar.Fecha_Solicitud_DataCard1.DataCardValue8"
               }
             }
           ],
@@ -604,19 +604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon6.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Impresora.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon6.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Impresora.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon6"
+                "type": "Scr_Formulario.Ico_Impresora"
               }
             }
           ],
@@ -634,19 +634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon6.TabIndex"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Impresora.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon6.TabIndex",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Impresora.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon6"
+                "type": "Scr_Formulario.Ico_Impresora"
               }
             }
           ],
@@ -664,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon4.TabIndex"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon4.TabIndex",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon4"
+                "type": "Scr_Formulario.Ico_Back"
               }
             }
           ],
@@ -694,19 +694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Formulario.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Formulario.Icon4.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Formulario.Ico_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Formulario",
-                "type": "Scr_Formulario.Icon4"
+                "type": "Scr_Formulario.Ico_Back"
               }
             }
           ],
@@ -784,19 +784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Home.Icon5.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Home.Ico_Web.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Home.Icon5.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Home.Ico_Web.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Home",
-                "type": "Scr_Home.Icon5"
+                "type": "Scr_Home.Ico_Web"
               }
             }
           ],
@@ -814,19 +814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Home.Icon5.TabIndex"
+                  "fullyQualifiedName": "Scr_Home.Ico_Web.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Home.Icon5.TabIndex",
+                  "fullyQualifiedName": "Scr_Home.Ico_Web.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Home",
-                "type": "Scr_Home.Icon5"
+                "type": "Scr_Home.Ico_Web"
               }
             }
           ],

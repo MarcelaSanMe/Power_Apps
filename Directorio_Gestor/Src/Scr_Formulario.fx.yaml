@@ -1,7 +1,7 @@
 Scr_Formulario As screen:
     OnVisible: =Set(_IdSolicitud,First(Split(GUID(),"-")).Value)
 
-    Form1 As form:
+    Frm_Radicar As form:
         BorderColor: =RGBA(0, 13, 75, 1)
         DataSource: =M_Gesor_Documental
         DefaultMode: =FormMode.New
@@ -562,7 +562,7 @@ Scr_Formulario As screen:
         Image: =LogoStefanini
         ZIndex: =5
 
-    Label3_1 As label:
+    Lbl_Titulo1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 13, 75, 1)
@@ -576,7 +576,7 @@ Scr_Formulario As screen:
         Y: =15
         ZIndex: =6
 
-    Icon5_4 As icon.Home:
+    Ico_Home As icon.Home:
         BorderColor: =RGBA(9, 33, 98, 1)
         BorderThickness: =3
         Fill: =RGBA(255, 255, 255, 1)
@@ -596,7 +596,7 @@ Scr_Formulario As screen:
         Y: =681
         ZIndex: =8
 
-        Button2 As button:
+        Btn_Guardar As button:
             AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(0, 13, 75, 1)
             Height: =46
@@ -606,7 +606,7 @@ Scr_Formulario As screen:
                     "Por favor Complete todos los campos obligatorios",
                     NotificationType.Error),
                 
-                SubmitForm(Form1);Notify("Se Registró correctamente la solicitud",NotificationType.Success); Navigate(Scr_Confimacion))
+                SubmitForm(Frm_Radicar);Notify("Se Registró correctamente la solicitud",NotificationType.Success); Navigate(Scr_Confimacion))
                 
             Text: ="Guardar"
             Width: =185
@@ -614,7 +614,7 @@ Scr_Formulario As screen:
             Y: =147
             ZIndex: =1
 
-    Icon4 As icon.BackArrow:
+    Ico_Back As icon.BackArrow:
         Height: =48
         Icon: =Icon.BackArrow
         OnSelect: =Back()
@@ -623,7 +623,7 @@ Scr_Formulario As screen:
         Y: =700
         ZIndex: =10
 
-    Label5_1 As label:
+    Lbl_Usuario1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =39
         Text: =User().FullName
@@ -632,19 +632,19 @@ Scr_Formulario As screen:
         Y: =61
         ZIndex: =11
 
-    Icon6 As icon.Print:
+    Ico_Impresora As icon.Print:
         Icon: =Icon.Print
         OnSelect: =Print()
         X: =813
         Y: =681
         ZIndex: =12
 
-    Icon3 As icon.CheckBadge:
-        Color: =RGBA(54, 176, 75, 1)
-        Height: =42
+    Ico_Validacion As icon.CheckBadge:
+        Color: =RGBA(9, 33, 98, 1)
+        Height: =28
         Icon: =If(IsBlank(DataCardValue3.Text),Icon.Cancel,Icon.Check)
-        Width: =40
-        X: =267
-        Y: =228
+        Width: =38
+        X: =282
+        Y: =213
         ZIndex: =13
 

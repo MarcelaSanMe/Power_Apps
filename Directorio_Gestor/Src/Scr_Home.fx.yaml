@@ -1,27 +1,23 @@
 Scr_Home As screen:
 
-    Button1 As button:
+    Btn_Radicar As button:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =76
-        OnSelect: =Navigate (Scr_Formulario);NewForm(Form1)
+        OnSelect: =Navigate (Scr_Formulario);NewForm(Frm_Radicar)
         Text: ="Radicar Solicitud"
         Width: =196
         X: =980
         Y: =184
         ZIndex: =1
 
-    Label1_3 As label:
+    Lbl_Header As label:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =100
         Text: =
         Width: =1366
         ZIndex: =2
 
-    Image4_3 As image:
-        Image: =LogoStefanini
-        ZIndex: =3
-
-    Label3 As label:
+    Lbl_Titulo As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 13, 75, 1)
@@ -35,7 +31,7 @@ Scr_Home As screen:
         Y: =15
         ZIndex: =4
 
-    Button1_3 As button:
+    Btn_VerInforme As button:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =76
         OnSelect: =Navigate (Scr_Informe)
@@ -83,7 +79,7 @@ Scr_Home As screen:
                 Width: =15
                 ZIndex: =2
 
-    Icon5 As icon.Globe:
+    Ico_Web As icon.Globe:
         Color: =RGBA(9, 33, 98, 1)
         Height: =93
         HoverColor: =ColorFade(Self.Color, 50%)
@@ -96,7 +92,7 @@ Scr_Home As screen:
         Y: =619
         ZIndex: =7
 
-    Label5 As label:
+    Lbl_Usuario As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =39
         Text: =User().FullName
@@ -104,4 +100,8 @@ Scr_Home As screen:
         X: =1160
         Y: =61
         ZIndex: =8
+
+    Image5 As image:
+        Image: =LogoStefanini
+        ZIndex: =10
 
