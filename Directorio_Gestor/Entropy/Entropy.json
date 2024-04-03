@@ -168,7 +168,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/03/2024 15:43:22",
+  "HeaderLastSavedDateTimeUTC": "04/03/2024 15:47:06",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7558c768-75c0-4cfa-bdc8-7ba4fcf85d49": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/79e53708133f4bdd829dfea2c7cbd55d\""
@@ -381,7 +381,7 @@
     "App": 0,
     "Aprobador_DataCard1": 34,
     "Aprobador_DataCard4": 101,
-    "Body1": 79,
+    "Body1": 80,
     "Btn_Bandeja": 11,
     "Btn_Guardar": 61,
     "Btn_Radicar": 9,
@@ -496,7 +496,7 @@
     "Lbl_Titulo1": 15,
     "Lbl_Usuario": 3,
     "Lbl_Usuario1": 17,
-    "NextArrow2": 80,
+    "NextArrow2": 79,
     "Observacion_Aprobador_DataCard3": 122,
     "Observacion_Columna1": 149,
     "Observación_DataCard1": 29,
