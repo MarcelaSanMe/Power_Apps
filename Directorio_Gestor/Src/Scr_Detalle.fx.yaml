@@ -38,6 +38,7 @@ Scr_Detalle As screen:
     FormViewer2 As formViewer:
         DataSource: =M_Gesor_Documental
         Height: =498
+        Item: =Gallery1.Selected
         NumberOfColumns: =2
         Width: =692
         X: =40
