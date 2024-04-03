@@ -116,7 +116,8 @@ Scr_Bandeja As screen:
             Color: =RGBA(255, 0, 0, 1)
             FocusedBorderThickness: =0
             Icon: =Icon.Cancel
-            OnSelect: =Remove(M_Gesor_Documental,Gallery1.Selected)
+            OnSelect: |-
+                =UpdateContext({VISIBILIDAD:true})
             Width: =69
             X: =1127
             Y: =10
@@ -219,4 +220,56 @@ Scr_Bandeja As screen:
         X: =1160
         Y: =61
         ZIndex: =20
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+        Rectangle1 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.28)
+            Height: =768
+            Visible: =VISIBILIDAD
+            Width: =1366
+            ZIndex: =21
+
+        Label3 As label:
+            Align: =Align.Center
+            Color: =RGBA(9, 33, 98, 1)
+            Fill: =RGBA(251, 188, 159, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =193
+            Size: =30
+            Text: ="¿Estás seguro que quieres eliminar el elemento ?"
+            Visible: =VISIBILIDAD
+            Width: =650
+            X: =322
+            Y: =262
+            ZIndex: =22
+
+        Button1 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            Height: =46
+            OnSelect: |-
+                =Remove(M_Gesor_Documental,Gallery1.Selected);UpdateContext({VISIBILIDAD:false})
+            Text: ="Si"
+            Visible: =VISIBILIDAD
+            Width: =201
+            X: =414
+            Y: =477
+            ZIndex: =23
+
+        Button1_3 As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =46
+            OnSelect: |-
+                =UpdateContext({VISIBILIDAD:false})
+            Text: ="No"
+            Visible: =VISIBILIDAD
+            Width: =201
+            X: =632
+            Y: =477
+            ZIndex: =24
 
