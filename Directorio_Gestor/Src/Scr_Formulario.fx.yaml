@@ -597,7 +597,16 @@ Scr_Formulario As screen:
             AlignInContainer: =AlignInContainer.Center
             Fill: =RGBA(0, 13, 75, 1)
             Height: =46
-            OnSelect: =SubmitForm(Form1);Notify("Se Registró correctamente la solicitud",NotificationType.Success); Navigate(Scr_Confimacion)
+            OnSelect: |+
+                =If(IsBlank(DataCardValue3.Text) || IsBlank(DataCardValue2.SelectedItems)
+                || IsBlank(DataCardValue4.SelectedItems) || IsBlank(DataCardValue6.SelectedItems)
+                ,
+                Notify (
+                    "Por favor Complete todos los campos obligatorios",
+                    NotificationType.Error),
+                
+                SubmitForm(Form1);Notify("Se Registró correctamente la solicitud",NotificationType.Success); Navigate(Scr_Confimacion))
+                
             Text: ="Guardar"
             Width: =185
             X: =1181
