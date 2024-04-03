@@ -75,8 +75,8 @@ Scr_Bandeja As screen:
             Size: =20
             Text: =ThisItem.Estado.Value
             Width: =195
-            X: =872
-            Y: =24
+            X: =762
+            Y: =19
             ZIndex: =3
 
         NextArrow2 As icon.ChevronRight:
@@ -113,13 +113,21 @@ Scr_Bandeja As screen:
             BorderColor: =RGBA(255, 0, 0, 1)
             Color: =RGBA(255, 0, 0, 1)
             FocusedBorderThickness: =0
-            Height: =60
+            Height: =59
             Icon: =Icon.Cancel
             OnSelect: =Remove(M_Gesor_Documental,Gallery1.Selected)
-            Width: =47
-            X: =1129
-            Y: =14
+            Width: =58
+            X: =1140
+            Y: =10
             ZIndex: =8
+
+        Icon10 As icon.Edit:
+            Color: =RGBA(204, 231, 246, 1)
+            Icon: =Icon.Edit
+            OnSelect: =EditForm(Frm_Radicar);Navigate(Scr_Formulario)
+            X: =1063
+            Y: =10
+            ZIndex: =9
 
     Label1_1 As label:
         Fill: =RGBA(0, 13, 75, 1)
