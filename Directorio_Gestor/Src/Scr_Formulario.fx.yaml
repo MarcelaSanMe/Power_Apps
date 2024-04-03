@@ -13,6 +13,70 @@ Scr_Formulario As screen:
         Y: =142
         ZIndex: =1
 
+        Fecha_Solicitud_DataCard1 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Fecha_Solicitud"
+            Default: =ThisItem.'Fecha Solicitud'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Fecha_Solicitud")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =114
+            Required: =false
+            Update: =DataCardValue8.SelectedDate
+            Width: =621
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue8 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =DisplayMode.View
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey8.X + DataCardKey8.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage8 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible8 As label:
+                Align: =Align.Center
+                Height: =DataCardKey8.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey8.Y
+                ZIndex: =4
+
         Usuario_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Usuario"
@@ -80,70 +144,6 @@ Scr_Formulario As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
-                ZIndex: =4
-
-        Fecha_Solicitud_DataCard1 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Fecha_Solicitud"
-            Default: =ThisItem.'Fecha Solicitud'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Fecha_Solicitud")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =114
-            Required: =false
-            Update: =DataCardValue8.SelectedDate
-            Width: =621
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey8 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
-                ZIndex: =1
-
-            DataCardValue8 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =DisplayMode.View
-                EndYear: =Year(Today())+100
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey8.X + DataCardKey8.Width
-                Y: =10
-                ZIndex: =2
-
-            ErrorMessage8 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
-                ZIndex: =3
-
-            StarVisible8 As label:
-                Align: =Align.Center
-                Height: =DataCardKey8.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey8.Y
                 ZIndex: =4
 
         Título_DataCard1 As typedDataCard.textualEditCard:
@@ -222,7 +222,7 @@ Scr_Formulario As screen:
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Prioridad")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue2.Selected
             Width: =621
             X: =1
@@ -312,7 +312,7 @@ Scr_Formulario As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =140
-                HintText: ="Ingrese una observación de la solicitud"
+                HintText: =""
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -424,7 +424,7 @@ Scr_Formulario As screen:
             DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,"Tipodesolicitud")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =140
-            Required: =false
+            Required: =true
             Update: =DataCardValue6.Selected
             Width: =621
             X: =0
@@ -628,4 +628,13 @@ Scr_Formulario As screen:
         X: =813
         Y: =681
         ZIndex: =12
+
+    Icon3 As icon.CheckBadge:
+        Color: =RGBA(54, 176, 75, 1)
+        Height: =42
+        Icon: =If(IsBlank(DataCardValue3.Text),Icon.Cancel,Icon.Check)
+        Width: =40
+        X: =267
+        Y: =228
+        ZIndex: =13
 
