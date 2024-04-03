@@ -598,9 +598,7 @@ Scr_Formulario As screen:
             Fill: =RGBA(0, 13, 75, 1)
             Height: =46
             OnSelect: |+
-                =If(IsBlank(DataCardValue3.Text) || IsBlank(DataCardValue2.SelectedItems)
-                || IsBlank(DataCardValue4.SelectedItems) || IsBlank(DataCardValue6.SelectedItems)
-                ,
+                =If(IsBlank(DataCardValue3.Text) || IsBlank(DataCardValue2.SelectedItems) || IsBlank(DataCardValue4.SelectedItems) || IsBlank(DataCardValue6.SelectedItems),
                 Notify (
                     "Por favor Complete todos los campos obligatorios",
                     NotificationType.Error),
