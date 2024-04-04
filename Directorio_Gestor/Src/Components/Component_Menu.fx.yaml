@@ -1,8 +1,10 @@
 Component_Menu As CanvasComponent:
+    Background_color: =RGBA(220, 220, 220, 1)
+    color_ham: =RGBA(140, 71, 153, 1)
     color_menu: =RGBA(140, 71, 153, 1)
     expandir_menu: =true
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
+    Height: =Component_Menu.menu_height
     Items: |-
         =Table(
             {
@@ -24,13 +26,18 @@ Component_Menu As CanvasComponent:
                 Id: 3
             }
         )
+    menu_height: =If(mostrar_menu,Component_Menu.set_menuheight,Icon_Menu.Height)
+    menu_width: =If(mostrar_menu,Component_Menu.Set_menu_width,Icon_Menu.Width)
     OnReset: =Set(mostrar_menu,Component_Menu.expandir_menu)
-    Width: =640
+    Set_menu_width: =300
+    set_menuheight: =400
+    Width: =Component_Menu.menu_width
     X: =0
     Y: =0
     ZIndex: =1
 
     Icon_Menu As icon.Hamburger:
+        Color: =Component_Menu.color_ham
         Icon: =Icon.Hamburger
         OnSelect: =Set(mostrar_menu,!mostrar_menu)
         PaddingBottom: =4
@@ -43,11 +50,13 @@ Component_Menu As CanvasComponent:
 
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
+        Fill: =Component_Menu.Background_color
         Items: =Component_Menu.Items
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =127
+        TemplateSize: =81
         Visible: =mostrar_menu
+        Width: =Parent.Width
         X: =60
         Y: =60
         ZIndex: =2
@@ -75,8 +84,7 @@ Component_Menu As CanvasComponent:
             Color: =Component_Menu.color_menu
             OnSelect: =Select(Parent)
             Text: =ThisItem.titulo
-            X: =125
-            Y: =40
+            X: =109
             ZIndex: =3
 
         Button4 As button:
@@ -87,6 +95,5 @@ Component_Menu As CanvasComponent:
             PressedFill: =Color.Transparent
             Text: =
             Width: =Parent.TemplateWidth
-            Y: =12
             ZIndex: =4
 

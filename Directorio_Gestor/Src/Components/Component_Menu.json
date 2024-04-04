@@ -40,6 +40,63 @@
       "PropertyDataTypeKey": "Color",
       "Tooltip": "Propiedad personalizada",
       "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "color_ham",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "color_ham",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Background_color",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "Background_color",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Set_menu_width",
+      "Hidden": false,
+      "Name": "Set_menu_width",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "menu_width",
+      "Hidden": true,
+      "Name": "menu_width",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "set_menuheight",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "set_menuheight",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "menu_height",
+      "Hidden": true,
+      "Name": "menu_height",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Propiedad personalizada",
+      "Type": "{\"Version\":\"1.338\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -50,7 +107,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638478472799688651",
+  "LastModifiedTimestamp": "638478505515723514",
   "Name": "3aa0b6ddd9a54bb79bd9914681e5a8d5",
   "OverridableProperties": {},
   "Version": "1.0"
