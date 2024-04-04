@@ -560,6 +560,7 @@ Scr_Formulario As screen:
 
     Image4 As image:
         Image: =LogoStefanini
+        X: =1014
         ZIndex: =5
 
     Lbl_Titulo1 As label:
@@ -647,4 +648,12 @@ Scr_Formulario As screen:
         X: =282
         Y: =213
         ZIndex: =13
+
+    Component_Menu_2 As Component_Menu:
+        Height: =Component_Menu_2.menu_height
+        menu_height: =If(mostrar_menu,Component_Menu_2.set_menuheight,Icon_Menu.Height)
+        menu_width: =If(mostrar_menu,Component_Menu_2.Set_menu_width,Icon_Menu.Width)
+        OnReset: =Set(mostrar_menu,Component_Menu_2.expandir_menu)
+        Width: =Component_Menu_2.menu_width
+        ZIndex: =14
 
