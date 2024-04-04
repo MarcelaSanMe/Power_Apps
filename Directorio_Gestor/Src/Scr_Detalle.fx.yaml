@@ -19,6 +19,7 @@ Scr_Detalle As screen:
 
     Image4_2 As image:
         Image: =LogoStefanini
+        X: =928
         ZIndex: =4
 
     Label3_3 As label:
@@ -37,12 +38,12 @@ Scr_Detalle As screen:
 
     FormViewer2 As formViewer:
         DataSource: =M_Gesor_Documental
-        Height: =498
+        Height: =404
         Item: =Gallery1.Selected
         NumberOfColumns: =2
-        Width: =692
-        X: =40
-        Y: =172
+        Width: =708
+        X: =24
+        Y: =266
         ZIndex: =7
 
         Título_DataCard4 As typedDataCard.textualViewCard:
@@ -518,4 +519,13 @@ Scr_Detalle As screen:
         X: =1160
         Y: =61
         ZIndex: =10
+
+    Component_Menu_5 As Component_Menu:
+        Height: =Component_Menu_5.menu_height
+        menu_height: =If(mostrar_menu,Component_Menu_5.set_menuheight,Icon_Menu.Height)
+        menu_width: =If(mostrar_menu,Component_Menu_5.Set_menu_width,Icon_Menu.Width)
+        OnReset: =Set(mostrar_menu,Component_Menu_5.expandir_menu)
+        Width: =Component_Menu_5.menu_width
+        Y: =15
+        ZIndex: =11
 

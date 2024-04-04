@@ -7,23 +7,29 @@ Component_Menu As CanvasComponent:
     Height: =Component_Menu.menu_height
     Items: |-
         =Table(
+             {
+                titulo: "Inicio",
+                icono: Icon.Home,
+                nav: Scr_Home,
+                Id: 1
+            },
             {
                 titulo: "Radicar solicitud",
                 icono: Icon.People,
                 nav: Scr_Formulario,
-                Id: 1
+                Id: 2
             },
             {
                 titulo: "Bandeja de gestión",
                 icono: Icon.Tablet,
                 nav: Scr_Bandeja,
-                Id: 2
+                Id: 3
             },
              {
                 titulo: "Informe de solicitudes",
                 icono: Icon.Information,
                 nav: Scr_Informe,
-                Id: 3
+                Id: 4
             }
         )
     menu_height: =If(mostrar_menu,Component_Menu.set_menuheight,Icon_Menu.Height)

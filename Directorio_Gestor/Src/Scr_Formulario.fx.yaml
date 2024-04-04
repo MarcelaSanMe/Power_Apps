@@ -655,5 +655,6 @@ Scr_Formulario As screen:
         menu_width: =If(mostrar_menu,Component_Menu_2.Set_menu_width,Icon_Menu.Width)
         OnReset: =Set(mostrar_menu,Component_Menu_2.expandir_menu)
         Width: =Component_Menu_2.menu_width
+        Y: =15
         ZIndex: =14
 

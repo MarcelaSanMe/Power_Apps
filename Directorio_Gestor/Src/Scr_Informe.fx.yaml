@@ -118,6 +118,7 @@ Scr_Informe As screen:
 
     Image4_5 As image:
         Image: =LogoStefanini
+        X: =930
         ZIndex: =3
 
     Label3_5 As label:
@@ -169,4 +170,13 @@ Scr_Informe As screen:
         X: =1160
         Y: =61
         ZIndex: =9
+
+    Component_Menu_6 As Component_Menu:
+        Height: =Component_Menu_6.menu_height
+        menu_height: =If(mostrar_menu,Component_Menu_6.set_menuheight,Icon_Menu.Height)
+        menu_width: =If(mostrar_menu,Component_Menu_6.Set_menu_width,Icon_Menu.Width)
+        OnReset: =Set(mostrar_menu,Component_Menu_6.expandir_menu)
+        Width: =Component_Menu_6.menu_width
+        Y: =15
+        ZIndex: =10
 
