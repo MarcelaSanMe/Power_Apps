@@ -36,7 +36,14 @@
           "HoverBorderColor",
           "FocusedBorderColor",
           "ZIndex",
-          "BorderThickness",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "BorderThickness",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "FocusedBorderThickness",
           {
             "AFDDataSourceName": "",
@@ -93,7 +100,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 155,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Design",
@@ -109,7 +116,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "79",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -127,7 +134,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "52",
+            "InvariantScript": "69",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -199,7 +206,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0",
+            "InvariantScript": "1",
             "Property": "BorderThickness",
             "RuleProviderType": "Unknown"
           },
@@ -303,7 +310,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 157,
+            "PublishOrderIndex": 158,
             "Rules": [
               {
                 "Category": "Design",
@@ -362,7 +369,7 @@
               {
                 "AFDDataSourceName": "",
                 "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "RGBA(56, 96, 178, 1)",
+                "AutoRuleBindingString": "",
                 "InvariantPropertyName": "Fill",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
@@ -385,7 +392,14 @@
                 "NameMapSourceSchema": "?"
               },
               "Font",
-              "FontWeight",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "FontWeight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "Align",
               "VerticalAlign",
               {
@@ -414,11 +428,46 @@
               },
               "Height",
               "ZIndex",
-              "RadiusTopLeft",
-              "RadiusTopRight",
-              "RadiusBottomLeft",
-              "RadiusBottomRight",
-              "BorderThickness",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusTopLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusTopRight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusBottomLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "RadiusBottomRight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "BorderThickness",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "FocusedBorderThickness",
               "Size",
               "Italic",
@@ -439,7 +488,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 158,
+            "PublishOrderIndex": 159,
             "Rules": [
               {
                 "Category": "Data",
@@ -545,7 +594,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "FontWeight.Semibold",
+                "InvariantScript": "FontWeight.Bold",
                 "Property": "FontWeight",
                 "RuleProviderType": "Unknown"
               },
@@ -581,7 +630,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "40",
+                "InvariantScript": "58",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -593,31 +642,31 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "10",
+                "InvariantScript": "50",
                 "Property": "RadiusTopLeft",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "10",
+                "InvariantScript": "50",
                 "Property": "RadiusTopRight",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "10",
+                "InvariantScript": "50",
                 "Property": "RadiusBottomLeft",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "10",
+                "InvariantScript": "50",
                 "Property": "RadiusBottomRight",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "2",
+                "InvariantScript": "3",
                 "Property": "BorderThickness",
                 "RuleProviderType": "Unknown"
               },
@@ -731,7 +780,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 159,
+            "PublishOrderIndex": 160,
             "Rules": [
               {
                 "Category": "Design",
@@ -967,7 +1016,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 160,
+            "PublishOrderIndex": 161,
             "Rules": [
               {
                 "Category": "Data",
@@ -1269,7 +1318,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 161,
+            "PublishOrderIndex": 162,
             "Rules": [
               {
                 "Category": "Design",
@@ -1452,6 +1501,14 @@
             "InvariantPropertyName": "Visible",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "BorderThickness",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "181",
@@ -1468,7 +1525,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Menu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 156,
+        "PublishOrderIndex": 157,
         "Rules": [
           {
             "Category": "Data",
@@ -1484,7 +1541,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "58",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
@@ -1592,13 +1649,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "0",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "79",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1606,7 +1663,7 @@
             "Category": "Design",
             "InvariantScript": "300",
             "Property": "Width",
-            "RuleProviderType": "User"
+            "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
@@ -1625,6 +1682,12 @@
             "InvariantScript": "mostrar_menu",
             "Property": "Visible",
             "RuleProviderType": "User"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "1",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultGalleryStyle",
@@ -1739,12 +1802,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638478518250959756",
+    "LastModifiedTimestamp": "638478546964565355",
     "Name": "Component_Menu",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\n    {\n        titulo: \"Radicar\",\n        icono: Icon.Add,\n        nav: Scr_Formulario,\n        Id: 1\n    },\n    {\n        titulo: \"Bandeja\",\n        icono: Icon.AddLibrary,\n        nav: Scr_Bandeja,\n        Id: 2\n    },\n     {\n        titulo: \"Informe\",\n        icono: Icon.AddToCalendar,\n        nav: Scr_Informe,\n        Id: 3\n    }\n)",
+        "InvariantScript": "Table(\n    {\n        titulo: \"Radicar solicitud\",\n        icono: Icon.People,\n        nav: Scr_Formulario,\n        Id: 1\n    },\n    {\n        titulo: \"Bandeja de gestión\",\n        icono: Icon.Tablet,\n        nav: Scr_Bandeja,\n        Id: 2\n    },\n     {\n        titulo: \"Informe de solicitudes\",\n        icono: Icon.Information,\n        nav: Scr_Informe,\n        Id: 3\n    }\n)",
         "Property": "Items",
         "RuleProviderType": "System"
       },
@@ -1756,13 +1819,13 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "RGBA(0, 0, 255, 1)",
+        "InvariantScript": "RGBA(0, 0, 280, 1)",
         "Property": "color_menu",
         "RuleProviderType": "System"
       },
       {
         "Category": "Data",
-        "InvariantScript": "RGBA(0, 0, 255, 1)",
+        "InvariantScript": "RGBA(255, 255, 255, 1)",
         "Property": "color_ham",
         "RuleProviderType": "System"
       },
@@ -1946,7 +2009,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638478518250959756",
+  "LastModifiedTimestamp": "638478546964565355",
   "Name": "3aa0b6ddd9a54bb79bd9914681e5a8d5",
   "OverridableProperties": {},
   "Version": "1.0"

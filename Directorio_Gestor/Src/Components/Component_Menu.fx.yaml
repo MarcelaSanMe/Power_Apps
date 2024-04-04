@@ -1,27 +1,27 @@
 Component_Menu As CanvasComponent:
     Background_color: =RGBA(220, 220, 220, 1)
-    color_ham: =RGBA(0, 0, 255, 1)
-    color_menu: =RGBA(0, 0, 255, 1)
+    color_ham: =RGBA(255, 255, 255, 1)
+    color_menu: =RGBA(0, 0, 280, 1)
     expandir_menu: =true
     Fill: =RGBA(0, 0, 0, 0)
     Height: =Component_Menu.menu_height
     Items: |-
         =Table(
             {
-                titulo: "Radicar",
-                icono: Icon.Add,
+                titulo: "Radicar solicitud",
+                icono: Icon.People,
                 nav: Scr_Formulario,
                 Id: 1
             },
             {
-                titulo: "Bandeja",
-                icono: Icon.AddLibrary,
+                titulo: "Bandeja de gestión",
+                icono: Icon.Tablet,
                 nav: Scr_Bandeja,
                 Id: 2
             },
              {
-                titulo: "Informe",
-                icono: Icon.AddToCalendar,
+                titulo: "Informe de solicitudes",
+                icono: Icon.Information,
                 nav: Scr_Informe,
                 Id: 3
             }
@@ -37,18 +37,20 @@ Component_Menu As CanvasComponent:
     ZIndex: =1
 
     Icon_Menu As icon.Hamburger:
+        BorderThickness: =1
         Color: =Component_Menu.color_ham
-        Height: =60
+        Height: =79
         Icon: =Icon.Hamburger
         OnSelect: =Set(mostrar_menu,!mostrar_menu)
         PaddingBottom: =4
         PaddingLeft: =4
         PaddingRight: =4
         PaddingTop: =4
-        Width: =52
+        Width: =69
         ZIndex: =1
 
     Gallery4 As gallery.galleryVertical:
+        BorderThickness: =1
         DelayItemLoading: =true
         Fill: =Component_Menu.Background_color
         Height: |
@@ -56,11 +58,10 @@ Component_Menu As CanvasComponent:
         Items: =Component_Menu.Items
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =40
+        TemplateSize: =58
         Visible: =mostrar_menu
         Width: =300
-        X: =60
-        Y: =60
+        Y: =79
         ZIndex: =2
 
         Rectangle4 As rectangle:
@@ -89,10 +90,17 @@ Component_Menu As CanvasComponent:
             ZIndex: =3
 
         Button4 As button:
+            BorderThickness: =3
             Fill: =Color.Transparent
+            FontWeight: =FontWeight.Bold
+            Height: =58
             HoverFill: =Color.Transparent
             OnSelect: =Navigate(ThisItem.nav)
             PressedFill: =Color.Transparent
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
             Text: =
             Width: =Parent.TemplateWidth
             ZIndex: =4
