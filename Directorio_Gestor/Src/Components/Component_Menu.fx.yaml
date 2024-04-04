@@ -75,5 +75,6 @@ Component_Menu As CanvasComponent:
         Button4 As button:
             OnSelect: =Select(Parent)
             Text: ="Botón"
+            Width: =Parent.TemplateWidth
             ZIndex: =4
 
