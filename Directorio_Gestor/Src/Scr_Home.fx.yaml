@@ -78,3 +78,11 @@ Scr_Home As screen:
         Y: =396
         ZIndex: =11
 
+    Component_Menu_1 As Component_Menu:
+        Height: =347
+        menu_height: =If(mostrar_menu,Component_Menu_1.set_menuheight,Icon_Menu.Height)
+        menu_width: =If(mostrar_menu,Component_Menu_1.Set_menu_width,Icon_Menu.Width)
+        OnReset: =Set(mostrar_menu,Component_Menu_1.expandir_menu)
+        Width: =Component_Menu_1.menu_width
+        ZIndex: =12
+

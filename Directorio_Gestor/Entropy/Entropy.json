@@ -1,6 +1,7 @@
 {
   "ComponentIndexes": {
-    "Component_Menu": 6
+    "Component_Menu": 6,
+    "Component_Menu_1": 6
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -18,6 +19,7 @@
     "Button1_3": 71,
     "Button4": 186,
     "Component_Menu": 170,
+    "Component_Menu_1": 189,
     "Container3": 166,
     "DataCardKey1": 133,
     "DataCardKey2": 138,
@@ -178,7 +180,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/04/2024 18:23:51",
+  "HeaderLastSavedDateTimeUTC": "04/04/2024 18:24:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7558c768-75c0-4cfa-bdc8-7ba4fcf85d49": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/79e53708133f4bdd829dfea2c7cbd55d\""
@@ -218,10 +220,10 @@
     "button": 4,
     "combobox": 10,
     "datepicker": 14,
-    "dropdown": 5,
+    "dropdown": 7,
     "form": 12,
     "formViewer": 9,
-    "gallery": 8,
+    "gallery": 5,
     "groupContainer": 15,
     "icon": 2,
     "image": 1,
@@ -229,7 +231,7 @@
     "pdfViewer": 11,
     "rectangle": 6,
     "slider": 3,
-    "text": 7
+    "text": 8
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -246,6 +248,7 @@
     "Button1_3": {},
     "Button4": {},
     "Component_Menu": {},
+    "Component_Menu_1": {},
     "Container3": {},
     "DataCardKey1": {},
     "DataCardKey2": {},
@@ -421,6 +424,7 @@
     "Button1_3": 82,
     "Button4": 158,
     "Component_Menu": 0,
+    "Component_Menu_1": 0,
     "Container3": 55,
     "DataCardKey1": 17,
     "DataCardKey2": 22,
@@ -589,7 +593,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 1.0636006,
     "ControlCount": {
-      "3aa0b6ddd9a54bb79bd9914681e5a8d5": 1,
+      "3aa0b6ddd9a54bb79bd9914681e5a8d5": 2,
       "attachments": 1,
       "button": 8,
       "combobox": 7,
