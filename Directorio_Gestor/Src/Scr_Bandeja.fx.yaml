@@ -1,6 +1,7 @@
 Scr_Bandeja As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        AccessibleLabel: ="prueba"
         BorderThickness: =2
         DelayItemLoading: =true
         Height: =391
@@ -237,16 +238,18 @@ Scr_Bandeja As screen:
 
         Label3 As label:
             Align: =Align.Center
-            Color: =RGBA(9, 33, 98, 1)
-            Fill: =RGBA(251, 188, 159, 1)
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =7
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 16, 96, 1)
             FontWeight: =FontWeight.Bold
             Height: =193
             Size: =30
             Text: ="¿Estás seguro que quieres eliminar el elemento ?"
             Visible: =VISIBILIDAD
             Width: =650
-            X: =322
-            Y: =262
+            X: =329
+            Y: =264
             ZIndex: =22
 
         Button1 As button:

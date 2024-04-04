@@ -1,0 +1,31 @@
+Component_Menu As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Items: |-
+        =Table({titulo: "Radicar", icono:Icon.Add, nav:Scr_Formulario, Id:1},{titulo: "Bandeja", icono:Icon.Add, nav:Scr_Bandeja, Id:2})
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Icon_Menu As icon.Hamburger:
+        Icon: =Icon.Hamburger
+        PaddingBottom: =4
+        PaddingLeft: =4
+        PaddingRight: =4
+        PaddingTop: =4
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Gallery3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =Parent.Height-Icon_Menu.Height
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        X: =60
+        Y: =Icon_Menu.Height
+        ZIndex: =2
+
