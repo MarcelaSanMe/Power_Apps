@@ -8,11 +8,6 @@ Scr_Confimacion As screen:
         Width: =1366
         ZIndex: =1
 
-    Image4_4 As image:
-        Image: =LogoStefanini
-        X: =959
-        ZIndex: =2
-
     Icon1 As icon.CheckBadge:
         Icon: =Icon.CheckBadge
         X: =639
@@ -94,28 +89,9 @@ Scr_Confimacion As screen:
         Y: =700
         ZIndex: =12
 
-    Icon5_8 As icon.Home:
-        BorderColor: =RGBA(9, 33, 98, 1)
-        BorderThickness: =3
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =45
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Scr_Home)
-        Width: =71
-        X: =1278
-        Y: =15
-        ZIndex: =13
-
-    Label5_5 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =39
-        Text: =User().FullName
-        Width: =206
-        X: =1160
-        Y: =61
-        ZIndex: =14
-
     Component_Menu_4 As Component_Menu:
+        Background_color: =RGBA(0, 13, 75, 1)
+        color_menu: =RGBA(255, 255, 255, 1)
         Height: =Component_Menu_4.menu_height
         menu_height: =If(mostrar_menu,Component_Menu_4.set_menuheight,Icon_Menu.Height)
         menu_width: =If(mostrar_menu,Component_Menu_4.Set_menu_width,Icon_Menu.Width)
@@ -123,4 +99,21 @@ Scr_Confimacion As screen:
         Width: =Component_Menu_4.menu_width
         Y: =15
         ZIndex: =15
+
+    Image5_4 As image:
+        Image: =LogoStefanini
+        OnSelect: |-
+            =Launch("https://stefanini.com/es")
+        Tooltip: ="Ir a la página de Stefanini"
+        X: =1266
+        ZIndex: =16
+
+    Lbl_Usuario_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1074
+        Y: =61
+        ZIndex: =17
 

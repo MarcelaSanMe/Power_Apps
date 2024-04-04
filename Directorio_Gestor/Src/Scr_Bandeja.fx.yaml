@@ -1,4 +1,5 @@
 Scr_Bandeja As screen:
+    Fill: =RGBA(0, 13, 75, 0.2)
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         AccessibleLabel: ="prueba"
@@ -141,11 +142,6 @@ Scr_Bandeja As screen:
         Width: =1366
         ZIndex: =2
 
-    Image4_1 As image:
-        Image: =LogoStefanini
-        X: =946
-        ZIndex: =3
-
     Label3_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -202,28 +198,9 @@ Scr_Bandeja As screen:
         Y: =700
         ZIndex: =18
 
-    Icon5_6 As icon.Home:
-        BorderColor: =RGBA(9, 33, 98, 1)
-        BorderThickness: =3
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =45
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Scr_Home)
-        Width: =71
-        X: =1278
-        Y: =15
-        ZIndex: =19
-
-    Label5_2 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =39
-        Text: =User().FullName
-        Width: =206
-        X: =1160
-        Y: =61
-        ZIndex: =20
-
     Component_Menu_3 As Component_Menu:
+        Background_color: =RGBA(0, 13, 75, 1)
+        color_menu: =RGBA(255, 255, 255, 1)
         Height: =Component_Menu_3.menu_height
         menu_height: =If(mostrar_menu,Component_Menu_3.set_menuheight,Icon_Menu.Height)
         menu_width: =If(mostrar_menu,Component_Menu_3.Set_menu_width,Icon_Menu.Width)
@@ -285,4 +262,21 @@ Scr_Bandeja As screen:
             X: =632
             Y: =477
             ZIndex: =24
+
+    Image5_2 As image:
+        Image: =LogoStefanini
+        OnSelect: |-
+            =Launch("https://stefanini.com/es")
+        Tooltip: ="Ir a la página de Stefanini"
+        X: =1266
+        ZIndex: =26
+
+    Lbl_Usuario_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1074
+        Y: =61
+        ZIndex: =27
 

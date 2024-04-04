@@ -1,14 +1,5 @@
 Scr_Home As screen:
-
-    Btn_Radicar As button:
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =76
-        OnSelect: =Navigate (Scr_Formulario);NewForm(Frm_Radicar)
-        Text: ="Radicar Solicitud"
-        Width: =231
-        X: =980
-        Y: =184
-        ZIndex: =1
+    Fill: =RGBA(0, 13, 75, 0.2)
 
     Lbl_Header As label:
         Fill: =RGBA(0, 13, 75, 1)
@@ -31,54 +22,26 @@ Scr_Home As screen:
         Y: =15
         ZIndex: =4
 
-    Btn_VerInforme As button:
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =76
-        OnSelect: =Navigate (Scr_Informe)
-        Text: ="Ver Informe"
-        Width: =231
-        X: =980
-        Y: =289
-        ZIndex: =5
-
-    Ico_Web As icon.Globe:
-        Color: =RGBA(9, 33, 98, 1)
-        Height: =93
-        HoverColor: =ColorFade(Self.Color, 50%)
-        Icon: =Icon.Globe
-        OnSelect: |-
-            =Launch("https://stefanini.com/es")
-        Tooltip: ="Ir a la página de Stefanini"
-        Width: =84
-        X: =1053
-        Y: =519
-        ZIndex: =7
-
     Lbl_Usuario As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =39
         Text: =User().FullName
         Width: =206
-        X: =1160
+        X: =1074
         Y: =61
         ZIndex: =8
 
     Image5 As image:
         Image: =LogoStefanini
-        X: =1053
+        OnSelect: |-
+            =Launch("https://stefanini.com/es")
+        Tooltip: ="Ir a la página de Stefanini"
+        X: =1266
         ZIndex: =10
 
-    Btn_Bandeja As button:
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =76
-        OnSelect: =Navigate (Scr_Bandeja)
-        Text: ="Bandeja de Gestión"
-        Width: =231
-        X: =980
-        Y: =396
-        ZIndex: =11
-
     Component_Menu_1 As Component_Menu:
+        Background_color: =RGBA(0, 13, 75, 1)
+        color_menu: =RGBA(255, 255, 255, 1)
         Height: =382
         menu_height: =If(mostrar_menu,Component_Menu_1.set_menuheight,Icon_Menu.Height)
         menu_width: =If(mostrar_menu,Component_Menu_1.Set_menu_width,Icon_Menu.Width)

@@ -1,4 +1,5 @@
 Scr_Detalle As screen:
+    Fill: =RGBA(0, 13, 75, 0.2)
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -16,11 +17,6 @@ Scr_Detalle As screen:
         Text: =
         Width: =1366
         ZIndex: =3
-
-    Image4_2 As image:
-        Image: =LogoStefanini
-        X: =928
-        ZIndex: =4
 
     Label3_3 As label:
         Align: =Align.Center
@@ -499,27 +495,6 @@ Scr_Detalle As screen:
         Y: =700
         ZIndex: =8
 
-    Icon5_7 As icon.Home:
-        BorderColor: =RGBA(9, 33, 98, 1)
-        BorderThickness: =3
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =45
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Scr_Home)
-        Width: =71
-        X: =1278
-        Y: =15
-        ZIndex: =9
-
-    Label5_3 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =39
-        Text: =User().FullName
-        Width: =206
-        X: =1160
-        Y: =61
-        ZIndex: =10
-
     Component_Menu_5 As Component_Menu:
         Height: =Component_Menu_5.menu_height
         menu_height: =If(mostrar_menu,Component_Menu_5.set_menuheight,Icon_Menu.Height)
@@ -528,4 +503,21 @@ Scr_Detalle As screen:
         Width: =Component_Menu_5.menu_width
         Y: =15
         ZIndex: =11
+
+    Image5_3 As image:
+        Image: =LogoStefanini
+        OnSelect: |-
+            =Launch("https://stefanini.com/es")
+        Tooltip: ="Ir a la página de Stefanini"
+        X: =1266
+        ZIndex: =12
+
+    Lbl_Usuario_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Text: =User().FullName
+        Width: =206
+        X: =1074
+        Y: =61
+        ZIndex: =13
 
