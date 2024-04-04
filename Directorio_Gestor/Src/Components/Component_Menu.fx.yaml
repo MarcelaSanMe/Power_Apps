@@ -65,12 +65,10 @@ Component_Menu As CanvasComponent:
         ZIndex: =2
 
         Rectangle4 As rectangle:
-            Height: =78
+            Height: =58
             OnSelect: =Select(Parent)
             Visible: =ThisItem.nav=App.ActiveScreen
-            Width: =12
-            X: =40
-            Y: =40
+            Width: =6
             ZIndex: =1
 
         Icon5 As icon.CheckBadge:
@@ -102,6 +100,7 @@ Component_Menu As CanvasComponent:
             RadiusTopLeft: =50
             RadiusTopRight: =50
             Text: =
-            Width: =Parent.TemplateWidth
+            Width: =250
+            X: =40
             ZIndex: =4
 
