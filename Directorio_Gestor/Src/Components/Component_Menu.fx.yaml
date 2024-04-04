@@ -38,14 +38,14 @@ Component_Menu As CanvasComponent:
 
     Icon_Menu As icon.Hamburger:
         Color: =Component_Menu.color_ham
+        Height: =60
         Icon: =Icon.Hamburger
         OnSelect: =Set(mostrar_menu,!mostrar_menu)
         PaddingBottom: =4
         PaddingLeft: =4
         PaddingRight: =4
         PaddingTop: =4
-        X: =40
-        Y: =40
+        Width: =52
         ZIndex: =1
 
     Gallery4 As gallery.galleryVertical:
@@ -54,9 +54,9 @@ Component_Menu As CanvasComponent:
         Items: =Component_Menu.Items
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =81
+        TemplateSize: =40
         Visible: =mostrar_menu
-        Width: =Parent.Width
+        Width: =300
         X: =60
         Y: =60
         ZIndex: =2
@@ -76,8 +76,7 @@ Component_Menu As CanvasComponent:
             Icon: =ThisItem.icono
             OnSelect: =Select(Parent)
             Width: =33
-            X: =76
-            Y: =40
+            X: =19
             ZIndex: =2
 
         Lbl_Menu As label:
@@ -89,7 +88,6 @@ Component_Menu As CanvasComponent:
 
         Button4 As button:
             Fill: =Color.Transparent
-            Height: =Lbl_Menu.Height
             HoverFill: =Color.Transparent
             OnSelect: =Navigate(ThisItem.nav)
             PressedFill: =Color.Transparent
