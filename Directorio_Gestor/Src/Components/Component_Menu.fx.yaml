@@ -1,4 +1,6 @@
 Component_Menu As CanvasComponent:
+    color_menu: =RGBA(140, 71, 153, 1)
+    expandir_menu: =true
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
     Items: |-
@@ -22,6 +24,7 @@ Component_Menu As CanvasComponent:
                 Id: 3
             }
         )
+    OnReset: =Set(mostrar_menu,Component_Menu.expandir_menu)
     Width: =640
     X: =0
     Y: =0
@@ -29,6 +32,7 @@ Component_Menu As CanvasComponent:
 
     Icon_Menu As icon.Hamburger:
         Icon: =Icon.Hamburger
+        OnSelect: =Set(mostrar_menu,!mostrar_menu)
         PaddingBottom: =4
         PaddingLeft: =4
         PaddingRight: =4
@@ -43,6 +47,7 @@ Component_Menu As CanvasComponent:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =127
+        Visible: =mostrar_menu
         X: =60
         Y: =60
         ZIndex: =2
@@ -57,24 +62,31 @@ Component_Menu As CanvasComponent:
             ZIndex: =1
 
         Icon5 As icon.CheckBadge:
-            Height: =52
+            Color: =Component_Menu.color_menu
+            Height: =40
             Icon: =ThisItem.icono
             OnSelect: =Select(Parent)
-            Width: =41
+            Width: =33
             X: =76
             Y: =40
             ZIndex: =2
 
         Lbl_Menu As label:
+            Color: =Component_Menu.color_menu
             OnSelect: =Select(Parent)
             Text: =ThisItem.titulo
-            X: =160
-            Y: =52
+            X: =125
+            Y: =40
             ZIndex: =3
 
         Button4 As button:
-            OnSelect: =Select(Parent)
-            Text: ="Botón"
+            Fill: =Color.Transparent
+            Height: =Lbl_Menu.Height
+            HoverFill: =Color.Transparent
+            OnSelect: =Navigate(ThisItem.nav)
+            PressedFill: =Color.Transparent
+            Text: =
             Width: =Parent.TemplateWidth
+            Y: =12
             ZIndex: =4
 
