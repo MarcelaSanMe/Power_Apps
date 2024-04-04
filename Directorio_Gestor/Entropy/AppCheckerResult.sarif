@@ -664,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Component_Menu.Gallery3.TabIndex"
+                  "fullyQualifiedName": "Component_Menu.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Component_Menu.Gallery3.TabIndex",
+                  "fullyQualifiedName": "Component_Menu.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Component_Menu",
-                "type": "Component_Menu.Gallery3"
+                "type": "Component_Menu.Gallery4"
               }
             }
           ],
@@ -686,8 +686,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1624,19 +1624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Component_Menu.Gallery3.AccessibleLabel"
+                  "fullyQualifiedName": "Component_Menu.Gallery4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Component_Menu.Gallery3.AccessibleLabel",
+                  "fullyQualifiedName": "Component_Menu.Gallery4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "Component_Menu",
-                "type": "Component_Menu.Gallery3"
+                "type": "Component_Menu.Gallery4"
               }
             }
           ],
@@ -1646,8 +1646,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [

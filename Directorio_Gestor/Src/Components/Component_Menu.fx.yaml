@@ -2,7 +2,26 @@ Component_Menu As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
     Items: |-
-        =Table({titulo: "Radicar", icono:Icon.Add, nav:Scr_Formulario, Id:1},{titulo: "Bandeja", icono:Icon.Add, nav:Scr_Bandeja, Id:2})
+        =Table(
+            {
+                titulo: "Radicar",
+                icono: Icon.Add,
+                nav: Scr_Formulario,
+                Id: 1
+            },
+            {
+                titulo: "Bandeja",
+                icono: Icon.AddLibrary,
+                nav: Scr_Bandeja,
+                Id: 2
+            },
+             {
+                titulo: "Informe",
+                icono: Icon.AddToCalendar,
+                nav: Scr_Informe,
+                Id: 3
+            }
+        )
     Width: =640
     X: =0
     Y: =0
@@ -18,14 +37,37 @@ Component_Menu As CanvasComponent:
         Y: =40
         ZIndex: =1
 
-    Gallery3 As gallery.galleryVertical:
+    Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =Parent.Height-Icon_Menu.Height
-        Items: =CustomGallerySample
+        Items: =Component_Menu.Items
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        TemplateSize: =127
         X: =60
-        Y: =Icon_Menu.Height
+        Y: =60
         ZIndex: =2
+
+        Rectangle4 As rectangle:
+            Height: =78
+            OnSelect: =Select(Parent)
+            Width: =12
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+        Icon5 As icon.CheckBadge:
+            Height: =52
+            Icon: =ThisItem.icono
+            OnSelect: =Select(Parent)
+            Width: =41
+            X: =76
+            Y: =40
+            ZIndex: =2
+
+        Lbl_Menu As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.titulo
+            X: =160
+            Y: =52
+            ZIndex: =3
 
