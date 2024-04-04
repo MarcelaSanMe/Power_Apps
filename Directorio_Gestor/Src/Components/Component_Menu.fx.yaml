@@ -50,6 +50,7 @@ Component_Menu As CanvasComponent:
         Rectangle4 As rectangle:
             Height: =78
             OnSelect: =Select(Parent)
+            Visible: =ThisItem.nav=App.ActiveScreen
             Width: =12
             X: =40
             Y: =40
@@ -70,4 +71,9 @@ Component_Menu As CanvasComponent:
             X: =160
             Y: =52
             ZIndex: =3
+
+        Button4 As button:
+            OnSelect: =Select(Parent)
+            Text: ="Botón"
+            ZIndex: =4
 
