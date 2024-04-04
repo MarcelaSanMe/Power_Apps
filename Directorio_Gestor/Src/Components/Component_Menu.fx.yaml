@@ -1,7 +1,7 @@
 Component_Menu As CanvasComponent:
     Background_color: =RGBA(220, 220, 220, 1)
-    color_ham: =RGBA(140, 71, 153, 1)
-    color_menu: =RGBA(140, 71, 153, 1)
+    color_ham: =RGBA(0, 0, 255, 1)
+    color_menu: =RGBA(0, 0, 255, 1)
     expandir_menu: =true
     Fill: =RGBA(0, 0, 0, 0)
     Height: =Component_Menu.menu_height
@@ -51,6 +51,8 @@ Component_Menu As CanvasComponent:
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
         Fill: =Component_Menu.Background_color
+        Height: |
+            =300
         Items: =Component_Menu.Items
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
