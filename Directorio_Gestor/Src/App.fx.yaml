@@ -1,18 +1,17 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
+    OnStart: |-
         =ClearCollect(
             Usuarios,
             {
                 nombre: "MARCELA",
-                usuario: masanchez,
+                usuario: "masanchez",
                 password: 123,
                 Pantalla: Scr_Formulario
-            }, 
-        
-             {
+            },
+            {
                 nombre: "LUCIANA",
-                usuario: lupalma,
+                usuario: "lupalma",
                 password: 456,
                 Pantalla: Scr_Bandeja
             }

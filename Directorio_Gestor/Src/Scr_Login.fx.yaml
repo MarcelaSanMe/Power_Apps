@@ -47,12 +47,18 @@ Scr_Login As screen:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =47
         OnSelect: |-
-            =Set(locnombrepantalla,Blank()),
-            Set(locnombrepantalla,LookUp(Usuarios, usuario =Txt_Usuario.Text And password=Txt_Password.Text).Pantalla),
+            =Set(locnombrepantalla, Blank()
+            );
+            Set (locnombrepantalla,
+            LookUp(Usuarios, 
+            usuario =Txt_Usuario.Text And password=Txt_Password.Text
+            ).Pantalla
+            );
+                
             Switch(
-                Usuarios,
-                Scr_Formulario, Navigate('Scr_Formulario',ErrorKind.None),
-                Scr_Bandeja, Navigate('Scr_Bandeja',ErrorKind.None)
+            Usuarios,
+                Scr_Formulario, Navigate('Scr_Formulario'),
+                Scr_Bandeja, Navigate('Scr_Bandeja')
             )
         Text: ="Ingresar"
         Width: =320
