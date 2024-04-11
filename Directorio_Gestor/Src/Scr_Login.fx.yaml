@@ -4,7 +4,7 @@ Scr_Login As screen:
     Component_Header_7 As Component_Header:
         ZIndex: =3
 
-    Label8 As label:
+    Lbl_Usuario As label:
         Color: =RGBA(0, 121, 187, 1)
         FontWeight: =FontWeight.Bold
         Height: =41
@@ -15,14 +15,15 @@ Scr_Login As screen:
         Y: =274
         ZIndex: =4
 
-    TextInput4 As text:
+    Txt_Usuario As text:
+        BorderThickness: =1
         Default: =""
         HintText: ="Ingresar usuario"
         X: =465
         Y: =315
         ZIndex: =5
 
-    Label9 As label:
+    Lbl_Password As label:
         Color: =RGBA(0, 121, 187, 1)
         FontWeight: =FontWeight.Bold
         Height: =31
@@ -33,7 +34,8 @@ Scr_Login As screen:
         Y: =368
         ZIndex: =6
 
-    TextInput5 As text:
+    Txt_Password As text:
+        BorderThickness: =1
         Default: =""
         HintText: ="Ingresar contraseña"
         Mode: =TextMode.Password
@@ -41,9 +43,17 @@ Scr_Login As screen:
         Y: =399
         ZIndex: =7
 
-    Button6 As button:
+    Btn_Ingresar As button:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =47
+        OnSelect: |-
+            =Set(locnombrepantalla,Blank()),
+            Set(locnombrepantalla,LookUp(Usuarios, usuario =Txt_Usuario.Text And password=Txt_Password.Text).Pantalla),
+            Switch(
+                Usuarios,
+                Scr_Formulario, Navigate('Scr_Formulario',ErrorKind.None),
+                Scr_Bandeja, Navigate('Scr_Bandeja',ErrorKind.None)
+            )
         Text: ="Ingresar"
         Width: =320
         X: =465

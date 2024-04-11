@@ -1,29 +1,20 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
+    OnStart: |
         =ClearCollect(
-            Menu_Gestor,
+            Usuarios,
             {
-                id: 1,
-                label: "Radicar Solicitud",
-                icon: Icon.Bookmark,
-                iconColor: RGBA(
-                    141,
-                    198,
-                    63,
-                    1
-                )
-            },
-            {
-                id: 2,
-                label: "Ver Informe",
-                icon: Icon.DockCheckProperties,
-                iconColor: RGBA(
-                    141,
-                    198,
-                    63,
-                    1
-                )
+                nombre: "MARCELA",
+                usuario: masanchez,
+                password: 123,
+                Pantalla: Scr_Formulario
+            }, 
+        
+             {
+                nombre: "LUCIANA",
+                usuario: lupalma,
+                password: 456,
+                Pantalla: Scr_Bandeja
             }
         )
     Theme: =PowerAppsTheme
