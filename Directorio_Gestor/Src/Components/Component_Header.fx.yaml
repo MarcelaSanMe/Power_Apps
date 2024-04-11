@@ -1,17 +1,10 @@
 Component_Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =Max(App.Height, App.MinScreenHeight)
+    Height: =100
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
     ZIndex: =1
-
-    Lbl_Header_1 As label:
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =100
-        Text: =
-        Width: =1366
-        ZIndex: =1
 
     Lbl_Usuario_5 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -22,12 +15,12 @@ Component_Header As CanvasComponent:
         Y: =61
         ZIndex: =3
 
-    Image5_6 As image:
-        Image: =LogoStefanini
-        OnSelect: |-
-            =Launch("https://stefanini.com/es")
-        Tooltip: ="Ir a la página de Stefanini"
-        X: =465
-        Y: =237
+    Button2 As button:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Height: =91
+        Text: ="Botón"
+        Width: =1339
+        X: =14
+        Y: =9
         ZIndex: =4
 
