@@ -1,0 +1,52 @@
+Scr_Login As screen:
+    Fill: =RGBA(0, 13, 75, 0.2)
+
+    Component_Header_7 As Component_Header:
+        ZIndex: =3
+
+    Label8 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        Size: =15
+        Text: ="Ingresar usuario"
+        Width: =320
+        X: =465
+        Y: =274
+        ZIndex: =4
+
+    TextInput4 As text:
+        Default: =""
+        HintText: ="Ingresar usuario"
+        X: =465
+        Y: =315
+        ZIndex: =5
+
+    Label9 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =15
+        Text: ="Ingresar contraseña"
+        Width: =320
+        X: =465
+        Y: =368
+        ZIndex: =6
+
+    TextInput5 As text:
+        Default: =""
+        HintText: ="Ingresar contraseña"
+        Mode: =TextMode.Password
+        X: =465
+        Y: =399
+        ZIndex: =7
+
+    Button6 As button:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =47
+        Text: ="Ingresar"
+        Width: =320
+        X: =465
+        Y: =465
+        ZIndex: =8
+

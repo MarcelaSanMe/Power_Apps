@@ -135,12 +135,12 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
+    "Scr_Login",
     "Scr_Home",
     "Scr_Formulario",
     "Scr_Bandeja",
     "Scr_Detalle",
     "Scr_Confimacion",
-    "Scr_Informe",
-    "Screen1"
+    "Scr_Informe"
   ]
 }

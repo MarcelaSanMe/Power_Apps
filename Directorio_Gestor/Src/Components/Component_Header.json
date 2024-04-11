@@ -25,7 +25,14 @@
             "NameMapSourceSchema": "?"
           },
           "DisabledBorderColor",
-          "PressedBorderColor",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "Self.Fill",
+            "InvariantPropertyName": "PressedBorderColor",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -58,7 +65,14 @@
           },
           "DisabledFill",
           "PressedFill",
-          "HoverFill",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "ColorFade(RGBA(56, 96, 178, 1), -20%)",
+            "InvariantPropertyName": "HoverFill",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Font",
           "FontWeight",
           "Align",
@@ -128,7 +142,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 141,
+        "PublishOrderIndex": 147,
         "Rules": [
           {
             "Category": "Data",
@@ -150,13 +164,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Self.Fill",
+            "InvariantScript": "Self.BorderColor",
             "Property": "PressedBorderColor",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           {
             "Category": "Design",
-            "InvariantScript": "ColorFade(Self.BorderColor, 0%)",
+            "InvariantScript": "Self.BorderColor",
             "Property": "HoverBorderColor",
             "RuleProviderType": "User"
           },
@@ -222,9 +236,9 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "ColorFade(RGBA(56, 96, 178, 1), -20%)",
+            "InvariantScript": "Self.BorderColor",
             "Property": "HoverFill",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           {
             "Category": "Design",
@@ -412,7 +426,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 142,
+        "PublishOrderIndex": 148,
         "Rules": [
           {
             "Category": "Data",
@@ -677,7 +691,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 143,
+        "PublishOrderIndex": 149,
         "Rules": [
           {
             "Category": "Data",
@@ -1002,7 +1016,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 144,
+        "PublishOrderIndex": 150,
         "Rules": [
           {
             "Category": "Data",
@@ -1278,7 +1292,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638484657955215316",
+    "LastModifiedTimestamp": "638484659261558441",
     "Name": "Component_Header",
     "Rules": [
       {
@@ -1337,7 +1351,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638484657955215316",
+  "LastModifiedTimestamp": "638484659261558441",
   "Name": "f40303a2fd314b00acca17776959fe6a",
   "OverridableProperties": {},
   "Version": "1.0"

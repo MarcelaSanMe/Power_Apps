@@ -21,7 +21,9 @@ Component_Header As CanvasComponent:
         Color: =Color.White
         Fill: =RGBA(0, 13, 75, 1)
         Height: =104
-        HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
+        HoverBorderColor: =Self.BorderColor
+        HoverFill: =Self.BorderColor
+        PressedBorderColor: =Self.BorderColor
         Text: ="Gestor de solicitudes"
         Width: =1339
         X: =14
