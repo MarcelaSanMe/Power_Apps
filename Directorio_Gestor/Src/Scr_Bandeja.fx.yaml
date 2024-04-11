@@ -135,27 +135,6 @@ Scr_Bandeja As screen:
             Y: =10
             ZIndex: =9
 
-    Label1_1 As label:
-        Fill: =RGBA(0, 13, 75, 1)
-        Height: =100
-        Text: =
-        Width: =1366
-        ZIndex: =2
-
-    Label3_2 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 13, 75, 1)
-        Font: =Font.'Lato Hairline'
-        FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =30
-        Text: ="Gestor de solicitudes"
-        Width: =520
-        X: =394
-        Y: =15
-        ZIndex: =4
-
     Label4 As label:
         Text: ="Buscar observación"
         Width: =286
@@ -198,12 +177,7 @@ Scr_Bandeja As screen:
         Y: =700
         ZIndex: =18
 
-    Component_Menu_3 As Component_Menu:
-        Background_color: =RGBA(0, 13, 75, 1)
-        color_menu: =RGBA(255, 255, 255, 1)
-        Height: =Component_Menu_3.menu_height
-        Width: =Component_Menu_3.menu_width
-        Y: =15
+    Component_Header_3 As Component_Header:
         ZIndex: =25
 
     Group1 As group:
@@ -260,20 +234,12 @@ Scr_Bandeja As screen:
             Y: =477
             ZIndex: =24
 
-    Image5_2 As image:
-        Image: =LogoStefanini
-        OnSelect: |-
-            =Launch("https://stefanini.com/es")
-        Tooltip: ="Ir a la página de Stefanini"
-        X: =1266
+    Component_Menu_3 As Component_Menu:
+        Background_color: =RGBA(0, 13, 75, 1)
+        color_menu: =RGBA(255, 255, 255, 1)
+        Height: =382
+        Width: =Component_Menu_3.menu_width
+        X: =15
+        Y: =30
         ZIndex: =26
-
-    Lbl_Usuario_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =39
-        Text: =User().FullName
-        Width: =206
-        X: =1074
-        Y: =61
-        ZIndex: =27
 

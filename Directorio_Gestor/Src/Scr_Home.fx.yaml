@@ -1,12 +1,15 @@
 Scr_Home As screen:
     Fill: =RGBA(0, 13, 75, 0.2)
 
+    Component_Header_1 As Component_Header:
+        ZIndex: =15
+
     Component_Menu_1 As Component_Menu:
         Background_color: =RGBA(0, 13, 75, 1)
         color_menu: =RGBA(255, 255, 255, 1)
         Height: =382
         Width: =Component_Menu_1.menu_width
-        X: =294
-        Y: =225
-        ZIndex: =12
+        X: =15
+        Y: =30
+        ZIndex: =16
 
