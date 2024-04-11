@@ -8,7 +8,7 @@ Scr_Login As screen:
         Color: =RGBA(0, 121, 187, 1)
         FontWeight: =FontWeight.Bold
         Height: =41
-        Size: =15
+        Size: =18
         Text: ="Ingresar usuario"
         Width: =320
         X: =465
@@ -27,7 +27,7 @@ Scr_Login As screen:
         Color: =RGBA(0, 121, 187, 1)
         FontWeight: =FontWeight.Bold
         Height: =31
-        Size: =15
+        Size: =18
         Text: ="Ingresar contraseña"
         Width: =320
         X: =465
@@ -47,22 +47,38 @@ Scr_Login As screen:
         Fill: =RGBA(0, 13, 75, 1)
         Height: =47
         OnSelect: |-
-            =Set(locnombrepantalla, Blank()
+            =Set(
+                Pantalla,
+                Blank()
             );
-            Set (locnombrepantalla,
-            LookUp(Usuarios, 
-            usuario =Txt_Usuario.Text And password=Txt_Password.Text
-            ).Pantalla
+            Set(
+                Pantalla,
+                LookUp(
+                    Usuarios,
+                    usuario = Txt_Usuario.Text And password = Txt_Password.Text
+                ).Pantalla
             );
-                
-            Switch(
-            Usuarios,
-                Scr_Formulario, Navigate('Scr_Formulario'),
-                Scr_Bandeja, Navigate('Scr_Bandeja')
-            )
+            Switch (Pantalla,
+            "Scr_Formulario",Navigate(Scr_Formulario,ScreenTransition.None),
+            "Scr_Bandeja",Navigate(Scr_Bandeja,ScreenTransition.None))
         Text: ="Ingresar"
         Width: =320
         X: =465
         Y: =465
         ZIndex: =8
+
+    Image2 As image:
+        Height: =84
+        Image: =LogoStefanini
+        OnSelect: |-
+            =Launch("https://stefanini.com/es")
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Tooltip: ="Ir a la página de Stefanini"
+        Width: =88
+        X: =594
+        Y: =540
+        ZIndex: =9
 

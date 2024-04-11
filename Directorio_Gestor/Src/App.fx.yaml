@@ -6,14 +6,14 @@ App As appinfo:
             {
                 nombre: "MARCELA",
                 usuario: "masanchez",
-                password: 123,
-                Pantalla: Scr_Formulario
+                password: "123",
+                Pantalla: "Scr_Formulario"
             },
             {
                 nombre: "LUCIANA",
                 usuario: "lupalma",
-                password: 456,
-                Pantalla: Scr_Bandeja
+                password: "456",
+                Pantalla: "Scr_Bandeja"
             }
         )
     Theme: =PowerAppsTheme
