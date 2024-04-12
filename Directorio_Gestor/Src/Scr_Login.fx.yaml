@@ -68,6 +68,7 @@ Scr_Login As screen:
                 ).Pantalla
             );
             Switch (Pantalla,
+            "Scr_Home",Navigate(Scr_Home,ScreenTransition.None) & Reset(Txt_Usuario) & Reset (Txt_Password),
             "Scr_Formulario",Navigate(Scr_Formulario,ScreenTransition.None) & Reset(Txt_Usuario) & Reset (Txt_Password),
             "Scr_Bandeja",Navigate(Scr_Bandeja,ScreenTransition.None)& Reset(Txt_Usuario) & Reset (Txt_Password))
         Text: ="Ingresar"
