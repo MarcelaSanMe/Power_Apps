@@ -1,21 +1,29 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
+    OnStart: |+
         =ClearCollect(
             Usuarios,
             {
                 nombre: "MARCELA",
                 usuario: "masanchez",
                 password: "123",
+                Pantalla: "Scr_Home"
+            },
+                {
+                nombre: "JESUS",
+                usuario: "jevalencia",
+                password: "456",
                 Pantalla: "Scr_Formulario"
             },
             {
                 nombre: "LUCIANA",
                 usuario: "lupalma",
-                password: "456",
+                password: "789",
                 Pantalla: "Scr_Bandeja"
             }
         )
+        
+        
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
