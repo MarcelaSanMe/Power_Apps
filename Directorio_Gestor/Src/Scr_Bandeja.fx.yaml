@@ -239,7 +239,16 @@ Scr_Bandeja As screen:
         color_menu: =RGBA(255, 255, 255, 1)
         Height: =382
         Width: =Component_Menu_3.menu_width
-        X: =15
-        Y: =30
+        X: =18
+        Y: =15
         ZIndex: =26
+
+    Icon3 As icon.ArrowsUpDown:
+        Height: =76
+        Icon: =Icon.Sort
+        OnSelect: |-
+            =UpdateContext({ordenar:!ordenar})
+        X: =1203
+        Y: =169
+        ZIndex: =27
 
