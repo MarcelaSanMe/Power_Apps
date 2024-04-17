@@ -151,3 +151,9 @@ Scr_Informe As screen:
         Y: =163
         ZIndex: =13
 
+    Dropdown1 As dropdown:
+        Items: =Sort(M_Gesor_Documental,Estado.Value,SortOrder.Ascending)
+        X: =99
+        Y: =495
+        ZIndex: =14
+
