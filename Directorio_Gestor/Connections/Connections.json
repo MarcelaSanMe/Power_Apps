@@ -19,10 +19,18 @@
             "tableName": "6ed53f0e-85bc-43b2-9e1d-8c0db46c8cbc"
           }
         }
+      },
+      "https://stefaninilatam-my.sharepoint.com/personal/msmejia_latam_stefanini_com": {
+        "dataSources": {
+          "UsuariosAutorizados": {
+            "tableName": "646e0efb-8bc0-4e7b-b3d3-6ac59a830abc"
+          }
+        }
       }
     },
     "dataSources": [
-      "M_Gesor_Documental"
+      "M_Gesor_Documental",
+      "UsuariosAutorizados"
     ],
     "dependencies": {},
     "dependents": [],
