@@ -6,7 +6,20 @@ Scr_Bandeja As screen:
         BorderThickness: =2
         DelayItemLoading: =true
         Height: =391
-        Items: =Search(M_Gesor_Documental,Txt_Nombre.Text,"Observaci_x00f3_n")
+        Items: |-
+            =If(
+                ordenar = true,
+                Sort(
+                    M_Gesor_Documental,
+                    'Tipo de solicitud'.Value,
+                    SortOrder.Ascending
+                ),
+                Sort(
+                    M_Gesor_Documental,
+                    'Tipo de solicitud'.Value,
+                    SortOrder.Descending
+                )
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -24,18 +37,18 @@ Scr_Bandeja As screen:
             DisabledColor: =RGBA(9, 33, 98, 1)
             DisabledFill: =RGBA(255, 255, 255, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =57
+            Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.Observacion
+            Text: =ThisItem.'Tipo de solicitud'.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =712
             X: =4
-            Y: =1
+            Y: =19
             ZIndex: =1
 
         Subtitle2 As label:
@@ -46,11 +59,11 @@ Scr_Bandeja As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Prioridad.Value
+            Text: =ThisItem.Usuario
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
             X: =Title2.X
-            Y: =Title2.Y + Title2.Height
+            Y: =57
             ZIndex: =2
 
         Body1 As label:
@@ -135,19 +148,6 @@ Scr_Bandeja As screen:
             Y: =10
             ZIndex: =9
 
-    Label4 As label:
-        Text: ="Buscar observación"
-        Width: =286
-        X: =36
-        Y: =128
-        ZIndex: =13
-
-    Txt_Nombre As text:
-        Default: =""
-        X: =36
-        Y: =176
-        ZIndex: =14
-
     Label12 As label:
         Align: =Align.Center
         BorderThickness: =1
@@ -164,8 +164,8 @@ Scr_Bandeja As screen:
     Label13 As label:
         Text: ="Cantidad de registros"
         Width: =187
-        X: =1143
-        Y: =128
+        X: =1157
+        Y: =129
         ZIndex: =17
 
     Icon4_1 As icon.BackArrow:
@@ -244,6 +244,7 @@ Scr_Bandeja As screen:
         ZIndex: =26
 
     Icon3 As icon.ArrowsUpDown:
+        BorderThickness: =1
         Height: =76
         Icon: =Icon.Sort
         OnSelect: |-
@@ -251,4 +252,11 @@ Scr_Bandeja As screen:
         X: =1203
         Y: =169
         ZIndex: =27
+
+    Label1 As label:
+        Text: =ordenar
+        Width: =65
+        X: =1267
+        Y: =708
+        ZIndex: =28
 
