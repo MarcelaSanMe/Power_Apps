@@ -7,7 +7,7 @@ Scr_Informe As screen:
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(0, 13, 75, 1)
         Height: =440
-        Items: =Filter(M_Gesor_Documental,Estado.Value=Dro_Lista.Selected.Value)
+        Items: =Filter (M_Gesor_Documental,TxtBusqueda.Text,"Observacion")
         Width: =1291
         X: =40
         Y: =246
@@ -112,9 +112,10 @@ Scr_Informe As screen:
             ZIndex: =8
 
     Dro_Lista As dropdown:
+        AllowEmptySelection: =true
         Items: =Distinct(M_Gesor_Documental,Estado.Value)
-        X: =40
-        Y: =153
+        X: =398
+        Y: =163
         ZIndex: =6
 
     Icon4_4 As icon.BackArrow:
@@ -137,4 +138,10 @@ Scr_Informe As screen:
         X: =15
         Y: =30
         ZIndex: =12
+
+    TxtBusqueda As text:
+        Default: =""
+        X: =40
+        Y: =163
+        ZIndex: =13
 
