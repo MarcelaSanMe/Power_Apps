@@ -1,6 +1,6 @@
 Scr_Formulario As screen:
     Fill: =RGBA(0, 13, 75, 0.2)
-    OnVisible: =Set(_IdSolicitud,First(Split(GUID(),"-")).Value)
+    OnVisible: =Set(_IdSolicitud,First(Split(GUID(),"-")).Value); Set(var_SaveButtonMode, DisplayMode.Disabled)
 
     Frm_Radicar As form:
         BorderColor: =RGBA(0, 13, 75, 1)
@@ -182,6 +182,7 @@ Scr_Formulario As screen:
                 DelayOutput: =true
                 DisplayMode: =DisplayMode.View
                 MaxLength: =Parent.MaxLength
+                OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -250,6 +251,7 @@ Scr_Formulario As screen:
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@M_Gesor_Documental].Prioridad)
+                OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(M_Gesor_Documental.Prioridad,DataCardValue2.SearchText)
@@ -321,6 +323,7 @@ Scr_Formulario As screen:
                 Height: =140
                 HintText: =""
                 MaxLength: =Parent.MaxLength
+                OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -389,6 +392,7 @@ Scr_Formulario As screen:
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@M_Gesor_Documental].Aprobador)
+                OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices(M_Gesor_Documental.Aprobador,DataCardValue4.SearchText)
@@ -457,6 +461,7 @@ Scr_Formulario As screen:
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@M_Gesor_Documental].'Tipo de solicitud')
+                OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(M_Gesor_Documental.'Tipo de solicitud',DataCardValue6.SearchText)
@@ -570,6 +575,7 @@ Scr_Formulario As screen:
 
         Btn_Guardar As button:
             AlignInContainer: =AlignInContainer.Center
+            DisplayMode: =var_SaveButtonMode
             Fill: =RGBA(0, 13, 75, 1)
             Height: =46
             OnSelect: |+
