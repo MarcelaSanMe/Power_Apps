@@ -42,14 +42,15 @@ Scr_EditarUsuarios As screen:
 
     "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =535
+        Height: =306
         Items: =If(ComboBox1.Selected.nombre=Blank(),Sort(UsuariosAutorizados,nombre,SortOrder.Descending),Sort(Filter(UsuariosAutorizados, nombre in ComboBox1.Selected.nombre),nombre_usuario,SortOrder.Descending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
-        X: =567
-        Y: =173
+        Width: =458
+        X: =48
+        Y: =257
         ZIndex: =31
 
         Image5 As image:
