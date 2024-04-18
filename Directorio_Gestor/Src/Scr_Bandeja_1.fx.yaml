@@ -4,7 +4,7 @@ Scr_Bandeja_1 As screen:
     "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =509
-        Items: =Sort(Filter(M_Gesor_Documental, Usuario in ComboBox1.Selected.Usuario), Observacion,SortOrder.Descending)
+        Items: =If (ComboBox1.Selected.Usuario=Blank(),Sort(M_Gesor_Documental,Usuario,SortOrder.Ascending),Sort(Filter(M_Gesor_Documental, Usuario in ComboBox1.Selected.Usuario), Observacion,SortOrder.Descending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -124,6 +124,6 @@ Scr_Bandeja_1 As screen:
         SearchItems: =Search(M_Gesor_Documental,ComboBox1.SearchText,"Observaci_x00f3_n")
         Template: =ListItemTemplate.Double
         X: =48
-        Y: =200
+        Y: =184
         ZIndex: =30
 
