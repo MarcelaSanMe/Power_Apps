@@ -175,7 +175,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/22/2024 21:58:03",
+  "HeaderLastSavedDateTimeUTC": "04/22/2024 22:26:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "7558c768-75c0-4cfa-bdc8-7ba4fcf85d49": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/79e53708133f4bdd829dfea2c7cbd55d\""
@@ -430,7 +430,7 @@
     "Component_Menu": 6,
     "Component_Menu_1": 22,
     "Component_Menu_2": 24,
-    "Component_Menu_3": 73,
+    "Component_Menu_3": 74,
     "Component_Menu_4": 133,
     "Component_Menu_5": 107,
     "Component_Menu_6": 123,
@@ -477,7 +477,7 @@
     "galleryTemplate3": 109,
     "galleryTemplate4": 150,
     "galleryTemplate5": 97,
-    "Group1": 74,
+    "Group1": 73,
     "Host": 0,
     "Ico_Back": 70,
     "Ico_Impresora": 69,
