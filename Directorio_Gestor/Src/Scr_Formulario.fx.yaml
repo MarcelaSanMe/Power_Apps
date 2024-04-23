@@ -180,7 +180,7 @@ Scr_Formulario As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =_IdSolicitud
                 DelayOutput: =true
-                DisplayMode: =DisplayMode.View
+                DisplayMode: =DisplayMode.Disabled
                 MaxLength: =Parent.MaxLength
                 OnChange: =Set(var_SaveButtonMode,DisplayMode.Edit)
                 PaddingLeft: =5
