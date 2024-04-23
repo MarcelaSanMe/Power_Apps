@@ -34,7 +34,7 @@ Scr_EditarUsuarios As screen:
         Height: =44
         Items: =UsuariosAutorizados
         SearchFields: =["nombre_usuario"]
-        SearchItems: =Search(UsuariosAutorizados,ComboBox1.SearchText,"nombre_usuario")
+        SearchItems: =Search(UsuariosAutorizados,ComboBox1.SearchText,nombre_usuario)
         Template: =ListItemTemplate.Double
         X: =48
         Y: =184
