@@ -41,6 +41,7 @@ Scr_EditarUsuarios As screen:
         ZIndex: =30
 
     "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtrada"
         DelayItemLoading: =true
         Height: =306
         Items: =If(ComboBox1.Selected.nombre=Blank(),Sort(UsuariosAutorizados,nombre,SortOrder.Descending),Sort(Filter(UsuariosAutorizados, nombre in ComboBox1.Selected.nombre),nombre_usuario,SortOrder.Descending))

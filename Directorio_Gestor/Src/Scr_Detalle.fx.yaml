@@ -23,15 +23,6 @@ Scr_Detalle As screen:
     Component_Header_4 As Component_Header:
         ZIndex: =9
 
-    Component_Menu_5 As Component_Menu:
-        Background_color: =RGBA(0, 13, 75, 1)
-        color_menu: =RGBA(255, 255, 255, 1)
-        Height: =382
-        Width: =Component_Menu_5.menu_width
-        X: =15
-        Y: =30
-        ZIndex: =10
-
     Txt_Observacion As text:
         Default: =""
         Height: =89
@@ -52,6 +43,7 @@ Scr_Detalle As screen:
         ZIndex: =12
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtrada"
         DelayItemLoading: =true
         Height: =397
         Items: =M_Gesor_Documental

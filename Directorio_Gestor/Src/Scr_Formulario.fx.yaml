@@ -20,7 +20,7 @@ Scr_Formulario As screen:
             DataField: ="Fecha_Solicitud"
             Default: =ThisItem.'Fecha Solicitud'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,Fecha_Solicitud)
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,'Fecha Solicitud')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =114
             Required: =false
@@ -154,10 +154,10 @@ Scr_Formulario As screen:
             DataField: ="Title"
             Default: =ThisItem.'ID Solicitud'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,Title)
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,'ID Solicitud')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, Title)
+            MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, 'ID Solicitud')
             Required: =false
             Update: =DataCardValue1.Text
             Width: =621
@@ -293,10 +293,10 @@ Scr_Formulario As screen:
             DataField: ="Observaci_x00f3_n"
             Default: =ThisItem.Observacion
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,Observaci_x00f3_n)
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,Observacion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, Observaci_x00f3_n)
+            MaxLength: =DataSourceInfo([@M_Gesor_Documental], DataSourceInfo.MaxLength, Observacion)
             Required: =false
             Update: =DataCardValue3.Text
             Width: =621
@@ -434,7 +434,7 @@ Scr_Formulario As screen:
             DataField: ="Tipodesolicitud"
             Default: =ThisItem.'Tipo de solicitud'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,Tipodesolicitud)
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,'Tipo de solicitud')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =140
             Required: =true
@@ -503,7 +503,7 @@ Scr_Formulario As screen:
             DataField: ="{Attachments}"
             Default: =ThisItem.'Datos adjuntos'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,'{Attachments}')
+            DisplayName: =DataSourceInfo([@M_Gesor_Documental],DataSourceInfo.DisplayName,'Datos adjuntos')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
